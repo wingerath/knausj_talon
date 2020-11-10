@@ -147,6 +147,26 @@ class Actions:
             # print("end drag...")
             ctrl.mouse_click(button=0, up=True)
 
+    def mouse_drag_right():
+        """(TEMPORARY) Press and hold/release button 1 depending on state for dragging"""
+        if 2 not in ctrl.mouse_buttons_down():
+            # print("start drag...")
+            ctrl.mouse_click(button=1, down=True)
+            # app.notify("drag started")
+        else:
+            # print("end drag...")
+            ctrl.mouse_click(button=1, up=True)
+
+    def mouse_drag_middle():
+        """(TEMPORARY) Press and hold/release button 2 depending on state for dragging"""
+        if 3 not in ctrl.mouse_buttons_down():
+            # print("start drag...")
+            ctrl.mouse_click(button=2, down=True)
+            # app.notify("drag started")
+        else:
+            # print("end drag...")
+            ctrl.mouse_click(button=2, up=True)
+
         # app.notify("drag stopped")
 
     def mouse_sleep():
