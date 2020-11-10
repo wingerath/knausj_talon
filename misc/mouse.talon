@@ -4,19 +4,16 @@ camera overlay: user.mouse_toggle_camera_overlay()
 mouse calibrate: user.mouse_calibrate()
 touch: 
 	mouse_click(0)
-    mouse_click(button=0, up=True)
 	# close the mouse grid if open
 	user.grid_close()
 
 (righty | rick | right click):
 	mouse_click(1)
-    mouse_click(button=1, up=True)
 	# close the mouse grid if open
 	user.grid_close()
 
 (midclick | mick):
 	mouse_click(2)
-    mouse_click(button=2, up=True)
 	# close the mouse grid
 	user.grid_close()
 
