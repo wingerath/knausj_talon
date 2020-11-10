@@ -20,7 +20,9 @@ talon sleep: speech.disable()
 talon wake: speech.enable()
 dragon mode: user.dragon_mode()
 dragon run <user.text>: user.engine_mimic("{text}")
-talon mode: user.talon_mode()
+talon mode:
+    speech.enable()
+    user.engine_command_mode()
 # end: these commands are really for windows & mac on Dragon.
 ^dictation mode$:
     mode.disable("sleep")
