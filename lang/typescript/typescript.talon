@@ -131,25 +131,25 @@ action(user.code_operator_bitwise_left_shift_assignment): " <<= "
 action(user.code_operator_bitwise_right_shift): " >> "
 action(user.code_operator_bitwise_right_shift_assignment): " >>= "
 
-state const: "const "
+[state] const: "const "
 
-state let: "let "
+[state] let: "let "
 
-state var: "var "
+[state] var: "var "
 
-state async: "async "
+[state] async: "async "
 
-state await: "await "
+[state] await: "await "
 
-state map:
+(state | dot) map:
   insert(".map()")
   key(left)
 
-state filter:
+(state | dot) filter:
   insert(".filter()")
   key(left)
 
-state reduce:
+(state | dot) reduce:
   insert(".reduce()")
   key(left)
 

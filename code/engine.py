@@ -14,6 +14,18 @@ class Actions:
         """Wake the engine"""
         speech_system.engine_mimic("wake up"),
 
+    def engine_dictation_mode():
+        """Wake the engine"""
+        speech_system.engine_mimic("switch to dictation mode"),
+
+    def engine_command_mode():
+        """Wake the engine"""
+        speech_system.engine_mimic("switch to command mode"),
+
+    def engine_dictation_and_commands_mode():
+        """Wake the engine"""
+        speech_system.engine_mimic("switch to dictation and commands mode"),
+
     def engine_mimic(cmd: str):
         """Sends phrase to engine"""
         speech_system.engine_mimic(cmd)

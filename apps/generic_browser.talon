@@ -62,3 +62,9 @@ dev tools: browser.toggle_dev_tools()
 # restore: key(X)
 # search tabs: key(T)
 # move to window: key(W)
+
+
+
+# vimium shortcuts:
+click: key(f)
+(click new | new tab): key(shift-f)

@@ -4,22 +4,22 @@ find it:
 next one:
     edit.find_next()
 
-go word left:
+(go word left | before):
     edit.word_left()
 
-go word right:
+(go word right | after):
     edit.word_right()
 
-go left:
+[go] left:
     edit.left()
 
-go right:
+[go] right:
     edit.right()
 
-go up:
+[go] up:
     edit.up()
 
-go down:
+[go] down:
     edit.down()
 
 go line start:
@@ -41,10 +41,10 @@ go way down:
 go way up:
     edit.file_start()
 
-go page down:
+[go] page down:
     edit.page_down()
 
-go page up:
+[go] page up:
     edit.page_up()
 
 # selecting
@@ -56,22 +56,22 @@ select all:
     edit.select_all()
 
 
-select left:
+(select left | lefts):
     edit.extend_left()
 
-select right:
+(select right | rights):
     edit.extend_right()
 
-select up:
+(select up | ups):
     edit.extend_line_up()
 
-select down:
+(select down | downs):
     edit.extend_line_down()
 
-select word left:
+(select word left | befores):
     edit.extend_word_left()
 
-select word right:
+(select word right | afters):
     edit.extend_word_right()
 
 select way left:
@@ -97,10 +97,10 @@ indent [more]:
 clear line:
     edit.delete_line()
 
-clear left:
+(clear left | delete left):
     key(backspace)
 
-clear right:
+(clear | delete) [right]:
     key(delete)
 
 clear up:
@@ -136,9 +136,9 @@ clear way down:
     edit.delete()
 
 #copy commands
-copy all: 
-    edit.select_all()
-    edit.copy()
+#copy all:
+#    edit.select_all()
+#    edit.copy()
 #to do: do we want these variants, seem to conflict
 # copy left: 
 #      edit.extend_left()
@@ -152,16 +152,16 @@ copy all:
 # copy down: 
 #     edit.extend_down()
 #     edit.copy()
-copy word left: 
-    edit.extend_word_left()
-    edit.copy()
-copy word right: 
-    edit.extend_word_right()
-    edit.copy()
+#copy word left:
+#    edit.extend_word_left()
+#    edit.copy()
+#copy word right:
+#    edit.extend_word_right()
+#    edit.copy()
 #cut commands
-cut everything: 
-    edit.select_all()
-    edit.cut()
+#cut everything:
+#    edit.select_all()
+#    edit.cut()
 #to do: do we want these variants
 # cut left: 
 #      edit.select_all()
@@ -175,9 +175,9 @@ cut everything:
 # cut down: 
 #     edit.select_all()
 #     edit.cut()
-cut word left: 
-    edit.extend_word_left()
-    edit.cut()
-cut word right: 
-    edit.extend_word_right()
-    edit.cut()
+#cut word left:
+#    edit.extend_word_left()
+#    edit.cut()
+#cut word right:
+#    edit.extend_word_right()
+#    edit.cut()
