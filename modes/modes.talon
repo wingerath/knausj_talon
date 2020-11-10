@@ -13,15 +13,24 @@ sleep all:
     user.mouse_sleep()
     speech.disable()
     user.engine_sleep()
+# begin: these commands are really for windows & mac with Dragon.
+go to sleep:
+    key("keypad_divide") #Dragon hotkey
 talon sleep: speech.disable()
 talon wake: speech.enable()
-# begin: these commands are really for windows & mac with Dragon.
 dragon mode: user.dragon_mode()
+dragon run <user.text>: user.engine_mimic("{text}")
 talon mode: user.talon_mode()
 # end: these commands are really for windows & mac on Dragon.
 ^dictation mode$:
     mode.disable("sleep")
     mode.disable("command")
+    mode.enable("dictation")
+    user.code_clear_language_mode()
+    mode.disable("user.gdb")
+^command and dictation mode$:
+    mode.disable("sleep")
+    mode.enable("command")
     mode.enable("dictation")
     user.code_clear_language_mode()
     mode.disable("user.gdb")
