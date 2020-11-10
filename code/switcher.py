@@ -2,8 +2,7 @@ import os
 import re
 import time
 
-import talon
-from talon import Context, Module, imgui, ui, fs, actions
+from talon import Context, Module, app, imgui, ui, fs, actions
 
 # Construct at startup a list of overides for application names (similar to how homophone list is managed)
 # ie for a given talon recognition word set  `one note`, recognized this in these switcher functions as `ONENOTE`
@@ -11,7 +10,7 @@ from talon import Context, Module, imgui, ui, fs, actions
 # TODO: Consider put list csv's (homophones.csv, app_name_overrides.csv) files together in a seperate directory,`knausj_talon/lists`
 cwd = os.path.dirname(os.path.realpath(__file__))
 overrides_directory = os.path.join(cwd, "app_names")
-override_file_name = f"app_name_overrides.{talon.app.platform}.csv"
+override_file_name = f"app_name_overrides.{app.platform}.csv"
 override_file_path = os.path.join(overrides_directory, override_file_name)
 
 
@@ -27,18 +26,26 @@ overrides = {}
 running_application_dict = {}
 
 
-@mod.capture(rule="{self.running}")  # | <user.text>)")
+@mod.capture
 def running_applications(m) -> str:
     "Returns a single application name"
+
+
+@mod.capture
+def launch_applications(m) -> str:
+    "Returns a single application name"
+
+
+@ctx.capture(rule="{self.running}")  # | <user.text>)")
+def running_applications(m):
     try:
         return m.running
     except AttributeError:
         return m.text
 
 
-@mod.capture(rule="{self.launch}")
-def launch_applications(m) -> str:
-    "Returns a single application name"
+@ctx.capture(rule="{self.launch}")
+def launch_applications(m):
     return m.launch
 
 
@@ -134,7 +141,7 @@ class Actions:
         # Hacky solution to do this reliably on Mac.
         timeout = 5
         t1 = time.monotonic()
-        if talon.app.platform == "mac":
+        if app.platform == "mac":
             while ui.active_app() != app and time.monotonic() - t1 < timeout:
                 time.sleep(0.1)
 
@@ -163,7 +170,7 @@ def gui(gui: imgui.GUI):
 
 
 def update_launch_list():
-    if talon.app.platform == "mac":
+    if app.platform == "mac":
         launch = {}
         for base in (
             "/Applications",
@@ -191,7 +198,6 @@ def update_launch_list():
 def ui_event(event, arg):
     if event in ("app_launch", "app_close"):
         update_lists()
-
 
 # Currently update_launch_list only does anything on mac, so we should make sure
 # to initialize user launch to avoid getting "List not found: user.launch"

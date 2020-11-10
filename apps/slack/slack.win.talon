@@ -37,6 +37,12 @@ channel down: key(alt-down)
 grab left: key(shift-up)
 grab right: key(shift-down)
 add line: key(shift-enter)
+edit message:
+    key(up)
+    key(e)
+save changes:
+    key(enter)
+    key(down)
 #"(slack | lack) (slap | slaw | slapper): [key(cmd-right) key(shift-enter")],
 (slack | lack) (react | reaction): key(ctrl-shift-\\)
 (insert command | commandify): key(ctrl-shift-c)
@@ -54,7 +60,7 @@ bold: key(ctrl-b)
 (strike | strikethrough): key(ctrl-shift-x)
 mark all read: key(shift-esc)
 mark channel read: key(esc)
-(clear | scrap | scratch): key(ctrl-a backspace)
+(clear message | scrap | scratch): key(ctrl-a backspace)
     # Files and Snippets
 (slack | lack) upload: key(ctrl-u)
 (slack | lack) snippet: key(ctrl-shift-enter)
@@ -64,6 +70,6 @@ mark channel read: key(esc)
 (slack | lack) invite: key(a)
     # Miscellaneous
 (slack | lack) shortcuts: key(ctrl-/)
-emote <user.text>: "{text}"
+emote <user.emoji>: insert(user.emoji)
 toggle left sidebar: key(ctrl-shift-d)
 toggle right sidebar: key(ctrl-.)

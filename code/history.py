@@ -24,6 +24,10 @@ def on_phrase(j):
         history.append(val)
         history = history[-hist_len:]
 
+        if gui.showing:
+            gui.freeze()
+
+
 # todo: dynamic rect?
 @imgui.open(y=0, software=False)
 def gui(gui: imgui.GUI):
@@ -51,7 +55,7 @@ class Actions:
 
     def history_enable():
         """Enables the history"""
-        gui.show()
+        gui.freeze()
 
     def history_disable():
         """Disables the history"""

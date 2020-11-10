@@ -1,5 +1,4 @@
 tag: terminal
-and tag: user.kubectl
 -
 cube [control]: "kubectl "
 

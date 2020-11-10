@@ -1,7 +1,7 @@
 tag: user.mouse_grid_showing
 -
-<user.number_key>:
-    user.grid_narrow(number_key)
+<number>:
+    user.grid_narrow(number)
 grid off:
     user.grid_close()
 

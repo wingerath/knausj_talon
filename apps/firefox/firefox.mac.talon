@@ -44,7 +44,7 @@ action(browser.go_home):
 	key(cmd-shift-h)
 
 action(browser.open_private_window):
-	key(cmd-shift-p)
+	key(ctrl-shift-n)
 
 action(browser.reload):
 	key(cmd-r)
@@ -61,7 +61,7 @@ action(browser.show_downloads):
 	key(cmd-shift-j)
 
 action(browser.show_extensions):
-	key(cmd-shift-a)
+	key(ctrl-shift-a)
 
 action(browser.show_history):
 	key(cmd-y)

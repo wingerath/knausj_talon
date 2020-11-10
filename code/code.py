@@ -1,4 +1,7 @@
-from talon import Context, Module, actions, app, imgui, registry, settings
+import os
+import re
+
+from talon import Context, Module, actions, app, fs, imgui, registry, settings, ui
 
 ctx = Context()
 mod = Module()
@@ -18,7 +21,6 @@ setting_protected_variable_formatter = mod.setting(
 setting_public_variable_formatter = mod.setting("code_public_variable_formatter", str)
 
 mod.tag("code_comment", desc="Tag for enabling generic comment commands")
-mod.tag("code_block_comment", desc="Tag for enabling generic block comment commands")
 mod.tag("code_operators", desc="Tag for enabling generic operator commands")
 mod.tag(
     "code_generic",
@@ -32,30 +34,28 @@ extension_lang_map = {
     "asm": "assembly",
     "bat": "batch",
     "c": "c",
-    "cmake": "cmake",
     "cpp": "cplusplus",
     "cs": "csharp",
     "gdb": "gdb",
     "go": "go",
     "h": "c",
     "hpp": "cplusplus",
-    "js": "javascript",
-    "json": "json",
     "lua": "lua",
     "md": "markdown",
     "pl": "perl",
     "ps1": "powershell",
     "py": "python",
-    "r": "r",
     "rb": "ruby",
     "s": "assembly",
+    "sql": "sql",
     "sh": "bash",
     "snippets": "snippets",
     "talon": "talon",
-    "ts": "typescript",
     "vba": "vba",
-    "vim": "vimscript",
-    "vimrc": "vimscript",
+    "vim": "vim",
+    "js": "javascript",
+    "ts": "typescript",
+    "r": "r",
 }
 
 # flag indicates whether or not the title tracking is enabled

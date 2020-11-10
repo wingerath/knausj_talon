@@ -66,9 +66,14 @@ ctx.lists["self.registers"] = x64_registers
 mod.list("registers", desc="Main architecture register set")
 
 
-@mod.capture(rule="{self.registers}")
+@mod.capture
 def registers(m) -> str:
-    "Returns a register"
+    "Return an register"
+    return m.registers
+
+
+@ctx.capture(rule="{self.registers}")
+def registers(m):
     return m.registers
 
 

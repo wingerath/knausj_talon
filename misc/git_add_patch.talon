@@ -1,5 +1,6 @@
-tag: terminal 
-and tag: user.git
+app: /.*terminal/
+app: /.*term/
+app: Cmd.exe
 title: /git add .*\-p/
 -
 yank:

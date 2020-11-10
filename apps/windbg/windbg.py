@@ -14,9 +14,14 @@ ctx.lists["self.windows_dlls"] = {
 }
 
 
-@mod.capture(rule="{self.windows_dlls}")
+@mod.capture
 def windows_dlls(m) -> str:
     "Return an register"
+    return m.windows_dlls
+
+
+@ctx.capture(rule="{self.windows_dlls}")
+def windows_dlls(m):
     return m.windows_dlls
 
 

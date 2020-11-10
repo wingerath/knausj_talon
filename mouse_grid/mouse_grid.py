@@ -3,7 +3,6 @@
 from talon import Module, Context, app, canvas, screen, ui, ctrl, cron
 from talon.skia import Shader, Color, Rect
 from talon_plugins import eye_mouse, eye_zoom_mouse
-from typing import Union
 
 import math, time
 
@@ -428,10 +427,10 @@ class GridActions:
         for d in digit_list:
             GridActions.grid_narrow(int(d))
 
-    def grid_narrow(digit: Union[int, str]):
+    def grid_narrow(digit: int):
         """Choose a field of the grid and narrow the selection down"""
         # print("narrow one", repr(digit))
-        mg.narrow(int(digit))
+        mg.narrow(digit)
 
     def grid_go_back():
         """Sets the grid state back to what it was before the last command"""

@@ -1,12 +1,13 @@
+from talon import Module, Context, actions, ui, imgui, clip, settings
 import re
 
-from talon import Context, Module, actions, settings
+from talon import actions, Context, Module
 
 mod = Module()
 ctx = Context()
 ctx.matches = r"""
 mode: user.python
-mode: command
+mode: command 
 and code.language: python
 """
 ctx.lists["user.code_functions"] = {
@@ -21,48 +22,6 @@ ctx.lists["user.code_functions"] = {
     "string": "str",
     "update": "update",
 }
-
-"""a set of fields used in python docstrings that will follow the
-reStructuredText format"""
-docstring_fields = {
-    "class": ":class:",
-    "function": ":func:",
-    "parameter": ":param:",
-    "raise": ":raise:",
-    "returns": ":return:",
-    "type": ":type:",
-    "return type": ":rtype:",
-    # these are sphinx-specific
-    "see also": ".. seealso:: ",
-    "notes": ".. notes:: ",
-    "warning": ".. warning:: ",
-    "todo": ".. todo:: ",
-}
-
-mod.list("python_docstring_fields", desc="python docstring fields")
-ctx.lists["user.python_docstring_fields"] = docstring_fields
-
-type_list = {
-    "boolean": "bool",
-    "integer": "int",
-    "string": "str",
-    "none": "None",
-    "dick": "Dict",
-    "float": "float",
-    "any": "Any",
-    "tuple": "Tuple",
-    "union": "UnionAny",
-    "iterable": "Iterable",
-    "vector": "Vector",
-    "bytes": "bytes",
-    "sequence": "Sequence",
-    "callable": "Callable",
-    "list": "List",
-    "no return": "NoReturn",
-}
-
-mod.list("python_type_list", desc="python types")
-ctx.lists["user.python_type_list"] = type_list
 
 exception_list = [
     "BaseException",
@@ -182,3 +141,4 @@ class module_actions:
             actions.key(f"left:{len(s) - end_pos}")
         else:
             actions.insert(text)
+

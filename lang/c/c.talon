@@ -105,10 +105,6 @@ action(user.code_block_comment):
 action(user.code_block_comment_prefix): "/*"
 action(user.code_block_comment_suffix): "*/"
 
-^funky <user.text>$: user.code_private_function(text)
-^static funky <user.text>$: user.code_private_static_function(text)
-
-
 # XXX - make these generic in programming, as they will match cpp, etc
 state define: "#define "
 state undefine: "#undef "
@@ -120,7 +116,10 @@ state error: "#error "
 state pre else if: "#elif "
 state pre end: "#endif "
 state pragma: "#pragma "
+
+
 state default: "default:\nbreak;"
+state break: "break;"
 
 #control flow
 #best used with a push like command
@@ -138,25 +137,38 @@ push brackets:
 
 # Declare variables or structs etc.
 # Ex. * int myList
-<user.c_variable> <phrase>:
-    insert("{c_variable} ")
+<user.variable> <phrase>:
+    insert("{variable} ")
     insert(user.formatted_text(phrase, "PRIVATE_CAMEL_CASE,NO_SPACES"))
 
-<user.c_variable> <user.letter>:
-    insert("{c_variable} {letter} ")
+<user.variable> <user.letter>:
+    insert("{variable} {letter} ")
+
+# Ex. int * testFunction
+# TODO: these clearly don't want to use function_key, so what do they want to use?
+# fun <user.function> <phrase>:
+#     insert("{function} ")
+#     insert(user.formatted_text(phrase, "PRIVATE_CAMEL_CASE,NO_SPACES"))
+#     insert("()")
+#     edit.left()
+
+# <user.function>:
+#     insert("{function} ")
 
 # Ex. (int *)
-cast to <user.c_cast>: "{c_cast}"
+cast to <user.cast>: "{cast}"
 standard cast to <user.stdint_cast>: "{stdint_cast}"
 <user.c_types>: "{c_types}"
 <user.c_pointers>: "{c_pointers}"
 <user.c_signed>: "{c_signed}"
 standard <user.stdint_types>: "{stdint_types}"
+call <user.c_functions>:
+    insert("{c_functions}()")
+    edit.left()
+#import standard libraries
+include <user.library>:
+    insert("#include <{library}>")
+    key(enter)
 int main:
     insert("int main()")
     edit.left()
-
-toggle includes: user.code_toggle_libraries()
-include <user.code_libraries>:
-    user.code_insert_library(code_libraries, "")
-    key(end enter)

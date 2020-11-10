@@ -1,19 +1,22 @@
-control mouse: user.mouse_toggle_control_mouse()
-zoom mouse: user.mouse_toggle_zoom_mouse()
+mouse control: user.mouse_toggle_control_mouse()
+mouse zoom: user.mouse_toggle_zoom_mouse()
 camera overlay: user.mouse_toggle_camera_overlay()
-run calibration: user.mouse_calibrate()	
+mouse calibrate: user.mouse_calibrate()
 touch: 
 	mouse_click(0)
+    mouse_click(button=0, up=True)
 	# close the mouse grid if open
 	user.grid_close()
 
-righty: 
+(righty | rick | right click):
 	mouse_click(1)
+    mouse_click(button=1, up=True)
 	# close the mouse grid if open
 	user.grid_close()
 
-midclick: 
+(midclick | mick):
 	mouse_click(2)
+    mouse_click(button=2, up=True)
 	# close the mouse grid
 	user.grid_close()
 
@@ -30,25 +33,30 @@ midclick:
 	key("{modifiers}:up")
 	# close the mouse grid
 	user.grid_close()
-<user.modifiers> righty: 
+
+<user.modifiers> (righty | rick | right click):
 	key("{modifiers}:down")
 	mouse_click(1)
 	key("{modifiers}:up")
 	# close the mouse grid
 	user.grid_close()
-(dubclick | duke): 
+
+<user.modifiers> (midclick | mick):
+	key("{modifiers}:down")
+	mouse_click(2)
+	key("{modifiers}:up")
+	# close the mouse grid
+	user.grid_close()
+
+(dubclick | duke):
 	mouse_click()
 	mouse_click()
 	# close the mouse grid
 	user.grid_close()
-(tripclick | triplick): 
+(tripclick | trike):
 	mouse_click()
 	mouse_click()
 	mouse_click()
-	# close the mouse grid
-	user.grid_close()
-drag: 
-	user.mouse_drag()
 	# close the mouse grid
 	user.grid_close()
 wheel down: user.mouse_scroll_down()
@@ -56,7 +64,7 @@ wheel down here:
     user.mouse_move_center_active_window()
     user.mouse_scroll_down()
 wheel tiny [down]: mouse_scroll(20)
-wheel tiny [down] here:
+wheel tiny [down]:
     user.mouse_move_center_active_window()
     mouse_scroll(20)
 wheel downer: user.mouse_scroll_down_continuous()
@@ -100,4 +108,8 @@ wheel tiny right here:
     mouse_scroll(0, 20)
 curse yes: user.mouse_show_cursor()
 curse no: user.mouse_hide_cursor()
+drag: user.mouse_drag()
+drag (righty | rick | right click): user.mouse_drag_right()
+drag (midclick | mick): user.mouse_drag_middle()
+
 copy mouse position: user.copy_mouse_position()

@@ -10,17 +10,16 @@ tag(): user.tabs
 action(user.tab_final): user.idea("action GoToLastTab")
 action(app.tab_next): user.idea("action NextTab")
 action(app.tab_previous): user.idea("action PreviousTab")
+action(app.tab_close): user.idea("action CloseActiveTab")
 
-action(app.tab_close): user.idea("action CloseContent")
-action(app.tab_reopen): user.idea("action ReopenClosedTab")
 #talon code actions
 action(code.toggle_comment): user.idea("action CommentByLineComment")
 
 #talon edit actions
-action(edit.copy): user.idea("action EditorCopy")
-action(edit.cut): user.idea("action EditorCut")
-action(edit.delete): user.idea("action EditorBackSpace")
-action(edit.paste): user.idea("action EditorPaste")
+#action(edit.copy): user.idea("action EditorCopy")
+#action(edit.cut): user.idea("action EditorCut")
+#action(edit.delete): user.idea("action EditorBackSpace")
+#action(edit.paste): user.idea("action EditorPaste")
 action(edit.find_next): user.idea("action FindNext")
 action(edit.find_previous): user.idea("action FindPrevious")
 action(edit.find): user.idea("action Find")
@@ -29,13 +28,9 @@ action(edit.line_swap_down):  user.idea("action MoveLineDown")
 action(edit.line_swap_up):  user.idea("action MoveLineUp")
 action(edit.indent_more): user.idea("action EditorIndentLineOrSelection")
 action(edit.indent_less): user.idea("action EditorUnindentSelection")
-action(edit.select_line): user.idea("action EditorSelectLine")
+action(edit.select_line): user.idea("action EditorLineStart, action EditorLineEndWithSelection")
 action(edit.select_word): user.idea("action EditorSelectWord")
-action(edit.select_all): user.idea("action $SelectAll")
-action(edit.file_start): user.idea("action EditorTextStart")
-action(edit.file_end): user.idea("action EditorTextEnd")
-action(edit.extend_file_start): user.idea("action EditorTextStartWithSelection")
-action(edit.extend_file_end): user.idea("action EditorTextEndWithSelection")
+#action(edit.select_all): user.idea("action $SelectAll")
 
 # splits.py support begin
 action(user.split_clear_all): user.idea("action UnsplitAll")
@@ -98,7 +93,7 @@ go usage: user.idea("action FindUsages")
 go type: user.idea("action GotoTypeDeclaration")
 go test: user.idea("action GotoTest")
 go back: user.idea("action Back")
-go forward: user.idea("action Forward")
+go (forward | forth): user.idea("action Forward")
 # Search
 find (everywhere | all): user.idea("action SearchEverywhere")
 find (everywhere | all) <user.text> [over]:
@@ -108,11 +103,9 @@ find (everywhere | all) <user.text> [over]:
 (search | find) class: user.idea("action GotoClass")
 (search | find) file: user.idea("action GotoFile")
 (search | find) path: user.idea("action FindInPath")
-(search | find) symbol: user.idea("action GotoSymbol")
-(search | find) symbol <user.text>$:
-    user.idea("action GotoSymbol")
-    insert(text)
-    key("enter")
+(search | find): key(ctrl-f)
+(search | find) next: key(f3)
+(search | find) (previous | prev): key(shift-f3)
 recent: user.idea("action RecentFiles")
 
 surround [this] with <user.text> [over]:
@@ -191,6 +184,7 @@ git menu: user.idea("action Vcs.QuickListPopupAction")
 # Toggling various tool windows
 toggle project: user.idea("action ActivateProjectToolWindow")
 toggle find: user.idea("action ActivateFindToolWindow")
+run code: key(shift-f10)
 toggle run: user.idea("action ActivateRunToolWindow")
 toggle debug: user.idea("action ActivateDebugToolWindow")
 toggle events: user.idea("action ActivateEventLogToolWindow")
@@ -293,8 +287,10 @@ paste last <user.text> [over]: user.idea("find prev {text}, action EditorRight, 
 paste next <user.text> [over]: user.idea("find next {text}, action EditorRight, action EditorPaste")
 refactor last <user.text> [over]: user.idea("find prev {text}, action Refactorings.QuickListPopupAction")
 refactor next <user.text> [over]: user.idea("find next {text}, action Refactorings.QuickListPopupAction")
-replace last <user.text> [over]: user.idea("find prev {text}, action EditorPaste")
-replace next <user.text> [over]: user.idea("find next {text}, action EditorPaste")
+#replace last <user.text> [over]: user.idea("find prev {text}, action EditorPaste")
+#replace next <user.text> [over]: user.idea("find next {text}, action EditorPaste")
+replace: key(ctrl-r)
+select in: key(alt-f1)
 select last <user.text> [over]: user.idea("find prev {text}")
 select next <user.text> [over]: user.idea("find next {text}")
 
@@ -302,6 +298,3 @@ select camel left: user.extend_camel_left()
 select camel right: user.extend_camel_right()
 go camel left: user.camel_left()
 go camel right: user.camel_right()
-
-# requires plug-in: black-pycharm
-blacken: user.idea("action BLACKReformatCode")

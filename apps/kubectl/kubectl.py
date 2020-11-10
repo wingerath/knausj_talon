@@ -1,12 +1,13 @@
 from talon import Module, Context
 
 mod = Module()
-mod.tag("kubectl", desc="tag for enabling kubectl commands in your terminal")
+
 kubectl = "kubectl"
+
 
 ctx = Context()
 ctx.matches = r"""
-tag: user.kubectl
+tag: terminal
 """
 
 mod.list("kubectl_action", desc="actions performed by kubectl")
