@@ -110,6 +110,7 @@ ctx.lists["self.modifier_key"] = {
     "control": "ctrl",  #'troll':   'ctrl',
     "option": "alt",
     "shift": "shift",  #'sky':     'shift',
+    "sky": "shift",
     "super": "super",
 }
 alphabet = dict(zip(default_alphabet, letters_string))
@@ -123,7 +124,7 @@ ctx.lists["self.symbol_key"] = {
     "period": ".",
     "semi": ";",
     "semicolon": ";",
-    "quote": "'",
+    "quote": '"',
     "L square": "[",
     "left square": "[",
     "square": "[",
@@ -132,6 +133,7 @@ ctx.lists["self.symbol_key"] = {
     "forward slash": "/",
     "slash": "/",
     "space": " ",
+    "whitespace": " ",
     "backslash": "\\",
     "minus": "-",
     "hyphen": "-",
@@ -201,6 +203,7 @@ simple_keys = [
     "pageup",
     "space",
     "tab",
+    "super",
 ]
 
 alternate_keys = {
