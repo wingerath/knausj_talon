@@ -1,5 +1,6 @@
-from talon import Module
+from talon import Context, Module
 
+ctx = Context()
 mod = Module()
 apps = mod.apps
 apps.slack = "app.name: Slack"
@@ -17,7 +18,7 @@ def emoji(m) -> str:
 ctx.lists["user.emoji"] = {
     "smile tears": ":joy:",
     "smile": ":smile:",
-    "sweat smile": ":sweat_smile:",
+    "smile sweat": ":sweat_smile:",
     "year boy": ":yeboi:",
 }
 
