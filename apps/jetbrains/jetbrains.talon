@@ -1,5 +1,6 @@
 # Requires https://plugins.jetbrains.com/plugin/10504-voice-code-idea
 app: jetbrains
+
 -
 tag(): user.line_commands
 tag(): user.multiple_cursors
@@ -10,6 +11,7 @@ tag(): user.tabs
 action(user.tab_final): user.idea("action GoToLastTab")
 action(app.tab_next): user.idea("action NextTab")
 action(app.tab_previous): user.idea("action PreviousTab")
+action(app.tab_close): user.idea("action CloseActiveTab")
 
 action(app.tab_close): user.idea("action CloseContent")
 action(app.tab_reopen): user.idea("action ReopenClosedTab")
@@ -29,13 +31,13 @@ action(edit.line_swap_down):  user.idea("action MoveLineDown")
 action(edit.line_swap_up):  user.idea("action MoveLineUp")
 action(edit.indent_more): user.idea("action EditorIndentLineOrSelection")
 action(edit.indent_less): user.idea("action EditorUnindentSelection")
-action(edit.select_line): user.idea("action EditorSelectLine")
+#action(edit.select_line): user.idea("action EditorSelectLine")
 action(edit.select_word): user.idea("action EditorSelectWord")
-action(edit.select_all): user.idea("action $SelectAll")
-action(edit.file_start): user.idea("action EditorTextStart")
-action(edit.file_end): user.idea("action EditorTextEnd")
-action(edit.extend_file_start): user.idea("action EditorTextStartWithSelection")
-action(edit.extend_file_end): user.idea("action EditorTextEndWithSelection")
+#action(edit.select_all): user.idea("action $SelectAll")
+#action(edit.file_start): user.idea("action EditorTextStart")
+#action(edit.file_end): user.idea("action EditorTextEnd")
+#action(edit.extend_file_start): user.idea("action EditorTextStartWithSelection")
+#action(edit.extend_file_end): user.idea("action EditorTextEndWithSelection")
 
 # splits.py support begin
 action(user.split_clear_all): user.idea("action UnsplitAll")
@@ -108,11 +110,9 @@ find (everywhere | all) <user.text> [over]:
 (search | find) class: user.idea("action GotoClass")
 (search | find) file: user.idea("action GotoFile")
 (search | find) path: user.idea("action FindInPath")
-(search | find) symbol: user.idea("action GotoSymbol")
-(search | find) symbol <user.text>$:
-    user.idea("action GotoSymbol")
-    insert(text)
-    key("enter")
+(search | find): key(ctrl-f)
+(search | find) next: key(f3)
+(search | find) (previous | prev): key(shift-f3)
 recent: user.idea("action RecentFiles")
 
 surround [this] with <user.text> [over]:
@@ -294,10 +294,18 @@ paste last <user.text> [over]: user.idea("find prev {text}, action EditorRight, 
 paste next <user.text> [over]: user.idea("find next {text}, action EditorRight, action EditorPaste")
 refactor last <user.text> [over]: user.idea("find prev {text}, action Refactorings.QuickListPopupAction")
 refactor next <user.text> [over]: user.idea("find next {text}, action Refactorings.QuickListPopupAction")
-replace last <user.text> [over]: user.idea("find prev {text}, action EditorPaste")
-replace next <user.text> [over]: user.idea("find next {text}, action EditorPaste")
+#replace last <user.text> [over]: user.idea("find prev {text}, action EditorPaste")
+#replace next <user.text> [over]: user.idea("find next {text}, action EditorPaste")
 replace: key(ctrl-r)
 select in: key(alt-f1)
+select in project:
+    key(alt-f1)
+    sleep(100ms)
+    key("1")
+select in explorer:
+    key(alt-f1)
+    sleep(100ms)
+    key("c")
 select last <user.text> [over]: user.idea("find prev {text}")
 select next <user.text> [over]: user.idea("find next {text}")
 
@@ -308,3 +316,16 @@ go camel right: user.camel_right()
 
 # requires plug-in: black-pycharm
 blacken: user.idea("action BLACKReformatCode")
+
+# git commands
+git pull: key(ctrl-t)
+git commit: key(ctrl-k)
+
+# open panels
+go project: key(alt-1)
+go favorites: key(alt-2)
+go problems: key(alt-6)
+go structure: key(alt-7)
+go services: key(alt-8)
+go git: key(alt-9)
+
