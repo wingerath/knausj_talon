@@ -12,7 +12,7 @@ go <user.arrow_keys>: key(arrow_keys)
 
 # hold and release modifiers
 hold <user.modifiers>: key("{modifiers}:down")
-release <user.modifiers>: key("{modifiers}:up")
+(release | drop) <user.modifiers>: key("{modifiers}:up")
 
 <user.modifiers> space: key("{modifiers}-space")
 (number | num) <user.number_key>: key("keypad_{number_key}")
