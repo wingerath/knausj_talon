@@ -155,10 +155,10 @@ ctx.lists["self.symbol_key"] = {
     "left paren": "(",
     "R paren": ")",
     "right paren": ")",
-    "brace": "{",
-    "left brace": "{",
-    "R brace": "}",
-    "right brace": "}",
+    "bracket": "{",
+    "left bracket": "{",
+    "R bracket": "}",
+    "right bracket": "}",
     "angle": "<",
     "left angle": "<",
     "less than": "<",
@@ -182,6 +182,10 @@ ctx.lists["self.symbol_key"] = {
     "pipe": "|",
     "dubquote": '"',
     "double quote": '"',
+    "german a": "ä",
+    "german odd": "ö",
+    "german urge": "ü",
+    "german sun": "ß",
 }
 
 
