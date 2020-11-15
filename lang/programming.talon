@@ -11,10 +11,11 @@ is (none|null): user.code_is_null()
 [state] if: user.code_state_if()
 [state] else if: user.code_state_else_if()
 [state] else: user.code_state_else()
+[state] when: user.code_state_when()
 [state] self: user.code_self()
 #todo: this is valid for many languages,
 # but probably not all
-[self] dot:
+self dot:
     user.code_self()
     insert(".")
 [state] while: user.code_state_while()
@@ -33,6 +34,7 @@ from import: user.code_from_import()
 [state] include local: user.code_include_local()
 [state] type deaf: user.code_type_definition()
 [state] type deaf struct: user.code_typedef_struct()
+[state] try catch: user.code_try_catch()
 [state] (no | nil | null): user.code_null()
 [state] break: user.code_break()
 [state] next: user.code_next()
