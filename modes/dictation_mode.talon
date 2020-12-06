@@ -4,8 +4,7 @@ mode: dictation
 <user.text>: auto_insert(text)
 enter: auto_insert("new-line")
 period: auto_insert(".")
-(comma | kama): 
-    auto_insert(",")
+(comma | kama): auto_insert(",")
 question mark: auto_insert("?")
 (bang | exclamation [mark]): auto_insert("!")
 dash: auto_insert("-")
@@ -52,11 +51,11 @@ clear right <number_small> words:
     edit.extend_word_right()
     repeat(number_small - 1)
     edit.delete()
-clear left <number_small> characters:
+(wipe | delete) <number_small> characters:
     edit.extend_left()
     repeat(number_small - 1)
     edit.delete()
-clear right <number_small> characters:
+(clear | delete) <number_small> characters:
     edit.extend_right()
     repeat(number_small - 1)
     edit.delete()
