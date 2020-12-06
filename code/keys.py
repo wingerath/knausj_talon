@@ -124,7 +124,7 @@ ctx.lists["self.symbol_key"] = {
     "period": ".",
     "semi": ";",
     "semicolon": ";",
-    "quote": '"',
+    "quote": "'",
     "L square": "[",
     "left square": "[",
     "square": "[",

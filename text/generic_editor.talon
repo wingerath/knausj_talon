@@ -100,7 +100,7 @@ clear line:
 (clear left | delete left):
     key(backspace)
 
-(clear | delete) [right]:
+(clear | delete):
     key(delete)
 
 clear up:
