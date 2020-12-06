@@ -68,7 +68,7 @@ action(user.multi_cursor_select_more_occurrences): user.idea("action SelectNextO
 complete: user.idea("action CodeCompletion")
 perfect: user.idea("action CodeCompletion,action CodeCompletion")
 smart: user.idea("action SmartTypeCompletion")
-(done | finish):  user.idea("action EditorCompleteStatement")
+finish:  user.idea("action EditorCompleteStatement")
 # Copying
 grab <number>: user.idea_grab(number)
 # Actions
@@ -192,6 +192,7 @@ git menu: user.idea("action Vcs.QuickListPopupAction")
 toggle project: user.idea("action ActivateProjectToolWindow")
 toggle find: user.idea("action ActivateFindToolWindow")
 run code: key(shift-f10)
+debug code: key(shift-f9)
 toggle run: user.idea("action ActivateRunToolWindow")
 toggle debug: user.idea("action ActivateDebugToolWindow")
 toggle events: user.idea("action ActivateEventLogToolWindow")
