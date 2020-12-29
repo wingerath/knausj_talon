@@ -1,4 +1,4 @@
-from talon import app, Module, Context, actions, ui, imgui, settings, app
+from talon import app, Module, Context, actions, ui, imgui, settings, app, registry
 from os.path import expanduser
 from subprocess import Popen
 from pathlib import Path
