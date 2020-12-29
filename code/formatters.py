@@ -1,4 +1,4 @@
-from talon import Module, Context, actions, ui, imgui
+from talon import Module, Context, actions, ui, imgui, app
 from talon.grammar import Phrase
 from typing import List, Union
 import re
@@ -217,7 +217,7 @@ class ImmuneString(object):
 @mod.capture(
     # Add anything else into this that you want to be able to speak during a
     # formatter.
-    rule="(<user.symbol_key> | <user.letter> | numb <number>)"
+    rule="(<user.symbol_key> | numb <number>)"
 )
 def formatter_immune(m) -> ImmuneString:
     """Text that can be interspersed into a formatter, e.g. characters.
@@ -295,7 +295,7 @@ class Actions:
 ctx.lists["self.formatters"] = formatters_words.keys()
 
 
-@imgui.open(software=False)
+@imgui.open(software=app.platform == "linux")
 def gui(gui: imgui.GUI):
     gui.text("List formatters")
     gui.line()
@@ -303,7 +303,7 @@ def gui(gui: imgui.GUI):
         gui.text(f"{name} | {format_phrase_no_history(['one', 'two', 'three'], name)}")
 
 
-@imgui.open(software=False)
+@imgui.open(software=app.platform == "linux")
 def recent_gui(gui: imgui.GUI):
     gui.text("Recent formatters")
     gui.line()
