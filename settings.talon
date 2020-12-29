@@ -1,5 +1,15 @@
 -
 settings():
+    #
+    #key_delay = 1.0
+    #
+    #key_wait = 1.0
+    #
+    #input_wait = 10000.0
+    #
+    #key_wait = 1.0
+    #
+    key_wait = 1.0
     #adjust the scale of the imgui to my liking
     imgui.scale = 2.5
     # enable if you'd like the picker gui to automatically appear when explorer has focus
