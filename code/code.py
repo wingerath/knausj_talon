@@ -35,6 +35,7 @@ extension_lang_map = {
     "cmake": "cmake",
     "cpp": "cplusplus",
     "cs": "csharp",
+    "gaming": "gaming",
     "gdb": "gdb",
     "go": "go",
     "h": "c",
@@ -42,6 +43,7 @@ extension_lang_map = {
     "js": "javascript",
     "json": "json",
     "lua": "lua",
+    "kt": "kotlin",
     "md": "markdown",
     "pl": "perl",
     "ps1": "powershell",
@@ -261,6 +263,12 @@ class Actions:
     def code_state_else():
         """Inserts else statement"""
 
+    def code_state_when():
+        """Inserts when statement"""
+
+    def code_state_when_condition():
+        """Inserts when condition"""
+
     def code_state_do():
         """Inserts do statement"""
 
@@ -298,7 +306,7 @@ class Actions:
         """Insert False value"""
 
     def code_try_catch():
-        """Inserts try/catch. If selection is true, does so around the selecion"""
+        """Inserts try/catch. If selection is true, does so around the selection"""
 
     def code_private_function(text: str):
         """Inserts private function declaration"""

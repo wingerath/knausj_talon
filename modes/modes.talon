@@ -15,8 +15,14 @@ sleep all:
     user.engine_sleep()
 talon sleep: speech.disable()
 talon wake: speech.enable()
+dragon sleep | snore:
+    speech.disable()
+    user.engine_sleep()
+    speech.enable()
 # begin: these commands are really for windows & mac with Dragon.
 dragon mode: user.dragon_mode()
+dragon run <user.text>: user.engine_mimic("{text}")
+dragon activate: user.engine_dictation_and_commands_mode()
 talon mode: user.talon_mode()
 # end: these commands are really for windows & mac on Dragon.
 ^dictation mode$:
@@ -25,7 +31,19 @@ talon mode: user.talon_mode()
     mode.enable("dictation")
     user.code_clear_language_mode()
     mode.disable("user.gdb")
+    user.engine_command_mode()
 ^command mode$:
     mode.disable("sleep")
     mode.disable("dictation")
     mode.enable("command")
+    user.engine_command_mode()
+^command and dictation mode$:
+    mode.disable("sleep")
+    mode.enable("dictation")
+    mode.enable("command")
+    user.engine_command_mode()
+^command and dragon mode$:
+    mode.disable("sleep")
+    mode.disable("dictation")
+    mode.enable("command")
+    user.engine_dictation_and_commands_mode()
