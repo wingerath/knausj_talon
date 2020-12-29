@@ -44,4 +44,4 @@ class Actions:
             elif app.platform == "windows":
                 actions.user.engine_wake()
                 # note: this may not do anything for all versions of Dragon. Requires Pro.
-                actions.user.engine_mimic("start normal mode")
+                actions.user.engine_mimic("switch to command and dictation mode")

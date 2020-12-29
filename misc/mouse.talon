@@ -60,12 +60,16 @@ drag:
 	user.mouse_drag()
 	# close the mouse grid
 	user.grid_close()
+drag (righty | rick | right click):
+	user.user.mouse_drag_right()
+	# close the mouse grid
+	user.grid_close()
 wheel down: user.mouse_scroll_down()
 wheel down here:
     user.mouse_move_center_active_window()
     user.mouse_scroll_down()
 wheel tiny [down]: mouse_scroll(20)
-wheel tiny [down]:
+wheel tiny [down] here:
     user.mouse_move_center_active_window()
     mouse_scroll(20)
 wheel downer: user.mouse_scroll_down_continuous()

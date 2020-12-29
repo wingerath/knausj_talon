@@ -112,6 +112,7 @@ ctx.lists["self.modifier_key"] = {
     "control": "ctrl",  #'troll':   'ctrl',
     "option": "alt",
     "shift": "shift",  #'sky':     'shift',
+    "sky": "shift",
     "super": "super",
 }
 alphabet = dict(zip(default_alphabet, letters_string))
@@ -182,10 +183,17 @@ symbol_key_words = {
     "hash": "#",
     "percent": "%",
     "caret": "^",
+    "at sign": "@",
+    "and sign": "&",
+    "ampersand": "&",
     "amper": "&",
     "pipe": "|",
     "dubquote": '"',
     "double quote": '"',
+    "german air": "ä",
+    "german odd": "ö",
+    "german urge": "ü",
+    "german sun": "ß",
 }
 
 # make punctuation words also included in {user.symbol_keys}
@@ -210,6 +218,7 @@ simple_keys = [
     "pageup",
     "space",
     "tab",
+    "super",
 ]
 
 alternate_keys = {

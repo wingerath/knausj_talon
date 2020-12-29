@@ -190,6 +190,7 @@ git menu: user.idea("action Vcs.QuickListPopupAction")
 toggle project: user.idea("action ActivateProjectToolWindow")
 toggle find: user.idea("action ActivateFindToolWindow")
 run code: key(shift-f10)
+debug code: key(shift-f9)
 toggle run: user.idea("action ActivateRunToolWindow")
 toggle debug: user.idea("action ActivateDebugToolWindow")
 toggle events: user.idea("action ActivateEventLogToolWindow")
@@ -296,6 +297,14 @@ refactor next <user.text> [over]: user.idea("find next {text}, action Refactorin
 #replace next <user.text> [over]: user.idea("find next {text}, action EditorPaste")
 replace: key(ctrl-r)
 select in: key(alt-f1)
+select in project:
+    key(alt-f1)
+    sleep(100ms)
+    key("1")
+select in explorer:
+    key(alt-f1)
+    sleep(100ms)
+    key("c")
 select last <user.text> [over]: user.idea("find prev {text}")
 select next <user.text> [over]: user.idea("find next {text}")
 
@@ -306,3 +315,17 @@ go camel right: user.camel_right()
 
 # requires plug-in: black-pycharm
 blacken: user.idea("action BLACKReformatCode")
+
+# git commands
+git pull: key(ctrl-t)
+git commit: key(ctrl-k)
+
+# manage panels
+go project: key(alt-1)
+go favorites: key(alt-2)
+go problems: key(alt-6)
+go structure: key(alt-7)
+go services: key(alt-8)
+go git: key(alt-9)
+
+hide panel: key(shift-escape)
