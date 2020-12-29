@@ -4,8 +4,10 @@ ctx = Context()
 mod = Module()
 apps = mod.apps
 apps.slack = "app.name: Slack"
-apps.slack = "app.name: Slack.exe"
-apps.slack = "app.name: slack.exe"
+apps.slack = """
+os: windows
+and app.name: slack.exe
+"""
 
 mod.list("emoji", desc="Slack emojies")
 

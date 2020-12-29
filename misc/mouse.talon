@@ -4,19 +4,16 @@ camera overlay: user.mouse_toggle_camera_overlay()
 mouse calibrate: user.mouse_calibrate()
 touch: 
 	mouse_click(0)
-    mouse_click(button=0, up=True)
 	# close the mouse grid if open
 	user.grid_close()
 
 (righty | rick | right click):
 	mouse_click(1)
-    mouse_click(button=1, up=True)
 	# close the mouse grid if open
 	user.grid_close()
 
 (midclick | mick):
 	mouse_click(2)
-    mouse_click(button=2, up=True)
 	# close the mouse grid
 	user.grid_close()
 
@@ -57,6 +54,10 @@ touch:
 	mouse_click()
 	mouse_click()
 	mouse_click()
+	# close the mouse grid
+	user.grid_close()
+drag:
+	user.mouse_drag()
 	# close the mouse grid
 	user.grid_close()
 wheel down: user.mouse_scroll_down()
@@ -108,8 +109,4 @@ wheel tiny right here:
     mouse_scroll(0, 20)
 curse yes: user.mouse_show_cursor()
 curse no: user.mouse_hide_cursor()
-drag: user.mouse_drag()
-drag (righty | rick | right click): user.mouse_drag_right()
-drag (midclick | mick): user.mouse_drag_middle()
-
 copy mouse position: user.copy_mouse_position()

@@ -3,6 +3,7 @@ from talon import speech_system
 
 mod = Module()
 
+
 @mod.action_class
 class Actions:
     def engine_sleep():

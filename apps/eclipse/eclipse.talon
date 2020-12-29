@@ -192,4 +192,4 @@ copy line up: key(ctrl-alt-up)
 # select less: user.vscode("editor.action.smartSelect.shrink")
 # select (more|this): user.vscode("editor.action.smartSelect.expand")
   
-  
+
