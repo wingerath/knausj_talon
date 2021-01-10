@@ -2,9 +2,9 @@ app: datagrip
 
 -
 select: "SELECT "
-star: "*"
 from: "FROM "
-select star from: "SELECT * FROM "
+with: "WITH "
+select (star | all | asterisk) from: "SELECT * FROM "
 where: "WHERE "
 order by: "ORDER BY "
 descending: " DESC"

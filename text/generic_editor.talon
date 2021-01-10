@@ -48,43 +48,43 @@ go page up:
     edit.page_up()
 
 # selecting
-select line:
+mark line:
     edit.select_line()
 
-select all:
+mark all:
     edit.select_all()
 
-(select left | go lefts):
+(mark left):
     edit.extend_left()
 
-(select right | go rights):
+(mark right):
     edit.extend_right()
 
-(select up | go ups):
+(mark up):
     edit.extend_line_up()
 
-(select down | go downs):
+(mark down):
     edit.extend_line_down()
 
-select word:
+mark word:
     edit.select_word()
 
-(select word left | go befores):
+(mark word left | mark before):
     edit.extend_word_left()
 
-(select word right | go afters):
+(mark word right | mark after):
     edit.extend_word_right()
 
-select way left:
+mark way left:
     edit.extend_line_start()
 
-select way right:
+mark way right:
     edit.extend_line_end()
 
-select way up:
+mark way up:
     edit.extend_file_start()
 
-select way down:
+mark way down:
     edit.extend_file_end()
 
 # editing

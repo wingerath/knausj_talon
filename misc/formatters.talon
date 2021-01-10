@@ -1,6 +1,7 @@
 #provide both anchored and unachored commands via 'over'
 phrase <user.text>$: user.insert_formatted(text, "NOOP")
 phrase <user.text> over: user.insert_formatted(text, "NOOP")
+over: skip()
 (say | speak) <user.prose>$: user.insert_formatted(prose, "NOOP")
 (say | speak) <user.prose> over: user.insert_formatted(prose, "NOOP")
 <user.format_text>+$: user.insert_many(format_text_list)

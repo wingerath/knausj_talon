@@ -49,7 +49,7 @@ save changes:
     key(down)
 #"(slack | lack) (slap | slaw | slapper): [key(cmd-right) key(shift-enter")],
 (slack | lack) (react | reaction): key(ctrl-shift-\\)
-(insert command | commandify): key(ctrl-shift-c)
+(insert command | inline code | commandify): key(ctrl-shift-c)
 insert code:
     insert("``````")
     key(left left left)
@@ -64,7 +64,7 @@ bold: key(ctrl-b)
 (strike | strikethrough): key(ctrl-shift-x)
 action(user.messaging_mark_workspace_read): key(shift-esc)
 action(user.messaging_mark_channel_read): key(esc)
-(clear | scrap | scratch): key(ctrl-a backspace)
+(clear | scrap | scratch) line: key(ctrl-a backspace)
     # Files and Snippets
 action(user.messaging_upload_file): key(ctrl-u)
 (slack | lack) snippet: key(ctrl-shift-enter)

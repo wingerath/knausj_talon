@@ -80,7 +80,7 @@ ctx.lists["user.abbreviation"] = {
     "enumerate": "enum",
     "environment": "env",
     "escape": "esc",
-    "etcetera": "etc",
+    "etcetera": "etc.",
     "example": "ex",
     "exception": "exc",
     "execute": "exec",
