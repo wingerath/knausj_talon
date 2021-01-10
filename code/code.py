@@ -36,6 +36,8 @@ extension_lang_map = {
     "cpp": "cplusplus",
     "cs": "csharp",
     "gaming": "gaming",
+    "gamingwolfenstein": "gamingwolfenstein",
+    "gamingdontstarvetogether": "gamingdontstarvetogether",
     "gdb": "gdb",
     "go": "go",
     "h": "c",

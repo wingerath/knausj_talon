@@ -1,13 +1,12 @@
-mode: user.gaming
+mode: user.gamingwolfenstein
 mode: command 
-and code.language: gaming
+and code.language: gamingwolfenstein
 -
 
 
 settings():
-    key_hold = 16.0
-    key_wait = 8.0
-    key_wait = 1.0
+    key_hold = 150.0
+    key_wait = 20.0
 
 Sprint slide:
     key("b:down")
@@ -17,16 +16,10 @@ Sprint slide:
     key("b:up")
     key("ctrl:up")
 
-attack:
-    key("f:down")
-    sleep(100ms)
-    key("f:up")
-    sleep(100ms)
-
 Crouch:
     key("ctrl:down")
     sleep(100ms)
     key("ctrl:up")
 
-active language: "gaming mode is working"
+active language: "gaming (Wolfenstein)"
 

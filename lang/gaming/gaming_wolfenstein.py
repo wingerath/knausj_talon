@@ -6,8 +6,7 @@ from talon import actions, Context, Module
 mod = Module()
 ctx = Context()
 ctx.matches = r"""
-mode: user.gaming
+mode: user.gamingwolfenstein
 mode: command 
-and code.language: gaming
+and code.language: gamingwolfenstein
 """
-

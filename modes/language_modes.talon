@@ -16,4 +16,5 @@ disable debug mode:
     mode.disable("user.gdb")
 
 
-^force gaming mode: user.code_set_language_mode("gaming")
+^force game Wolfenstein: user.code_set_language_mode("gamingwolfenstein")
+^force game dont starve together: user.code_set_language_mode("gamingdontstarvetogether")
