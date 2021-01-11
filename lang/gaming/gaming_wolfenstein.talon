@@ -1,8 +1,7 @@
-mode: user.gamingwolfenstein
+mode: user.gaming_Wolfenstein
 mode: command 
-and code.language: gamingwolfenstein
+and code.language: gaming_Wolfenstein
 -
-
 
 settings():
     key_hold = 150.0

@@ -1,12 +1,12 @@
-mode: user.gamingdontstarvetogether
+mode: user.gaming_DontStarveTogether
 mode: command 
-and code.language: gamingdontstarvetogether
+and code.language: gaming_DontStarveTogether
 -
 
 settings():
     key_hold = 150.0
     key_wait = 20.0
-    speech.engine = 'wav2letter'
+#    speech.engine = 'wav2letter'
 
 abort: user.abort_action()
 

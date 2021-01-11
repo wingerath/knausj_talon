@@ -284,6 +284,7 @@ noise.register("pop", on_pop)
 
 def on_hiss(active):
     print('hiss', active)
+    #key("space")
     #ctrl.mouse_click(button=1, hold=16000)
 
 

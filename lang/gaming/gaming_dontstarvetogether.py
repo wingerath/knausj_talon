@@ -6,9 +6,9 @@ from talon import actions, Context, Module
 mod = Module()
 ctx = Context()
 ctx.matches = r"""
-mode: user.gamingdontstarvetogether
+mode: user.gaming_DontStarveTogether
 mode: command 
-and code.language: gamingdontstarvetogether
+and code.language: gaming_DontStarveTogether
 """
 
 @mod.action_class
