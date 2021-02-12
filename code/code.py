@@ -44,6 +44,7 @@ extension_lang_map = {
     "hpp": "cplusplus",
     "js": "javascript",
     "json": "json",
+    "latex": "latex",
     "lua": "lua",
     "kt": "kotlin",
     "md": "markdown",

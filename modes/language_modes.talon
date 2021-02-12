@@ -3,6 +3,7 @@
 ^force go (lang|language)$: user.code_set_language_mode("go")
 ^force java script$: user.code_set_language_mode("javascript")
 ^force kotlin$: user.code_set_language_mode("kotlin")
+^force latex: user.code_set_language_mode("latex")
 ^force type script$: user.code_set_language_mode("typescript")
 ^force markdown$: user.code_set_language_mode("markdown")
 ^force python$: user.code_set_language_mode("python")
