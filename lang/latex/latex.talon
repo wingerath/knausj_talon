@@ -5,6 +5,10 @@ and code.language: latex
 active language: "LaTeX working"
 
 
-keyword:
-    insert("\\textkeyword{}")
-    edit.left()
+keyword: user.simple_command("textkeyword")
+
+section: user.simple_command("section")
+subsection: user.simple_command("subsection")
+subsubsection: user.simple_command("subsubsection")
+
+
