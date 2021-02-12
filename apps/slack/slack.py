@@ -18,9 +18,12 @@ def emoji(m) -> str:
 
 
 ctx.lists["user.emoji"] = {
+    "muscle": ":muscle:",
+    "scream": ":scream:",
     "smile tears": ":joy:",
     "smile": ":smile:",
     "smile sweat": ":sweat_smile:",
+    "thumbs up": ":thumbsup:",
     "year boy": ":yeboi:",
 }
 
