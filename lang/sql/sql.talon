@@ -25,64 +25,51 @@ dot i d: ".id"
 is not null: " IS NOT NULL"
 is null: " IS NULL"
 inner join: " INNER JOIN "
+left join: " LEFT JOIN "
+right join: " RIGHT JOIN "
+outer join: " OUTER JOIN "
+full outer join: " FULL OUTER JOIN "
 on: " ON "
 case when then end: "CASE WHEN  THEN  END"
+case when:
+  insert("CASE WHEN  THEN  END")
+    key("left left left left left left left left left left")
 
 
 # Aggregate functions
 average:
     insert("AVG() ")
-    edit.left()
-    edit.left()
+    key("left left")
 array (aggregation | agg):
     insert("ARRAY_AGG() ")
-    edit.left()
-    edit.left()
+    key("left left")
 array transform:
     insert("TRANSFORM() ")
-    edit.left()
-    edit.left()
+    key("left left")
 array sort:
     insert("ARRAY_SORT() ")
-    edit.left()
-    edit.left()
+    key("left left")
 count:
     insert("COUNT() ")
-    edit.left()
-    edit.left()
+    key("left left")
 count if:
     insert("COUNT_IF() ")
-    edit.left()
-    edit.left()
+    key("left left")
 count (all | star | asterisk): "COUNT() "
 
-state <user.text> equals:
-    insert("{user.text} = ")
-    edit.left()
+state <user.text> equals: "{user.text} = "
 
 # Presto functions
 (approx | approximate) (perc | percentile):
     insert("approx_percentile(, 0.5) ")
-    edit.left()
-    edit.left()
-    edit.left()
-    edit.left()
-    edit.left()
-    edit.left()
-    edit.left()
+    key("left left left left left left left")
 
 # Presto functions
 cast as double:
     insert("CAST( AS DOUBLE) ")
-    edit.left()
-    edit.left()
-    edit.left()
-    edit.left()
-    edit.left()
-    edit.left()
-    edit.left()
-    edit.left()
-    edit.left()
-    edit.left()
-    edit.left()
-    edit.left()
+    key("left left left left left left left left left left left left left")
+
+# Presto functions: regex
+regex extracts:
+    insert("regexp_extract(, '', 1) ")
+    key("left left left left left left left left left")
