@@ -32,7 +32,7 @@ go left: edit.left()
 go right: edit.right()
 go before: edit.word_left()
 go after: edit.word_right()
-go way left: edit.line_start( the
+go way left: edit.line_start()
 go way right: edit.line_end()
 #selection
 mark up <number_small> times:
