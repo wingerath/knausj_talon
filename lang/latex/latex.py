@@ -21,5 +21,5 @@ class Actions:
     def list_environment(env: str):
         """inserts a list_environment environment"""
         actions.key("enter enter")
-        actions.insert("\\begin{" + env +"}\n\item\n\\end{" + env +"}")
+        actions.insert("\\begin{" + env +"}\n\\item\n\\end{" + env +"}")
         actions.key("up shift-left tab end space")
