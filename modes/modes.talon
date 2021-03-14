@@ -14,7 +14,7 @@ sleep all:
     speech.disable()
     user.engine_sleep()
 talon sleep: speech.disable()
-talon wake: speech.enable()
+(talon wake | wake up): speech.enable()
 dragon sleep | snore:
     speech.disable()
     user.engine_sleep()
@@ -31,7 +31,6 @@ talon mode: user.talon_mode()
     mode.enable("dictation")
     user.code_clear_language_mode()
     mode.disable("user.gdb")
-    user.engine_command_mode()
 ^command mode$:
     mode.disable("sleep")
     mode.disable("dictation")

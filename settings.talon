@@ -1,6 +1,11 @@
 -
 settings():
     #
+    speech.timeout = 0.300
+	imgui.dark_mode = 1
+    # just record speech all the time and may be sent the data to aegis at some point
+    speech.record_all = 1
+    #
     #key_delay = 1.0
     #
     #key_wait = 1.0

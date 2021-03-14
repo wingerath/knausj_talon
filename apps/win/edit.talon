@@ -203,3 +203,8 @@ action(edit.zoom_out):
 
 action(edit.zoom_reset):
 	key(ctrl-0)
+
+
+
+# shortcut for Linguee/Deepl translator
+translate: key("ctrl-c ctrl-shift-c")
