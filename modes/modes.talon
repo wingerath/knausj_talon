@@ -14,7 +14,7 @@ sleep all:
     speech.disable()
     user.engine_sleep()
 talon sleep | snore | go to sleep: speech.disable()
-(chirpedy chirp):
+(please wake up you son of a gun you):
     speech.enable()
 dragon sleep:
     speech.disable()
