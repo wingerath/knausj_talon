@@ -19,3 +19,4 @@ disable debug mode:
 
 ^force game Wolfenstein: user.code_set_language_mode("gaming_Wolfenstein")
 ^force game dont starve together: user.code_set_language_mode("gaming_DontStarveTogether")
+^force german: user.code_set_language_mode("german")

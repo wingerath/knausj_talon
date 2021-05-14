@@ -39,6 +39,7 @@ extension_lang_map = {
     "gaming_Wolfenstein": "gaming_Wolfenstein",
     "gaming_DontStarveTogether": "gaming_DontStarveTogether",
     "gdb": "gdb",
+    "german": "german",
     "go": "go",
     "h": "c",
     "hpp": "cplusplus",

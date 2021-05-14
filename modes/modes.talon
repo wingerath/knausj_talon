@@ -13,9 +13,10 @@ sleep all:
     user.mouse_sleep()
     speech.disable()
     user.engine_sleep()
-talon sleep: speech.disable()
-(talon wake | wake up): speech.enable()
-dragon sleep | snore:
+talon sleep | snore | go to sleep: speech.disable()
+(chirpedy chirp):
+    speech.enable()
+dragon sleep:
     speech.disable()
     user.engine_sleep()
     speech.enable()

@@ -16,3 +16,7 @@ class Actions:
     def abort_action():
         """Aborts all ongoing actions"""
         actions.key("f:up ctrl:up shift:up")
+
+    def test_action():
+        """a test action"""
+        actions.key("x")
