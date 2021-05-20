@@ -3,9 +3,9 @@ from talon.engines.w2l import W2lEngine
 from talon.engines.vosk import VoskEngine
 #w2l = W2lEngine(model='en_US', debug=False)
 w2l = W2lEngine(model='en_US-conformer', debug=False)
-vosk_de = VoskEngine(model='vosk-model-de-0.6', language='de_DE')
+#vosk_de = VoskEngine(model='vosk-model-de-0.6', language='de_DE')
 speech_system.add_engine(w2l)
-speech_system.add_engine(vosk_de)
+#speech_system.add_engine(vosk_de)
 
 
 # # ideally you integrate this into your engines.py file
