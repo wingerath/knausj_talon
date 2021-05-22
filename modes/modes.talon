@@ -5,6 +5,7 @@ welcome back:
     user.mouse_wake()
     user.history_enable()
     user.talon_mode()
+    user.sound_enable()
 sleep all:
     user.switcher_hide_running()
     user.history_disable()
@@ -13,9 +14,13 @@ sleep all:
     user.mouse_sleep()
     speech.disable()
     user.engine_sleep()
-talon sleep | snore | go to sleep: speech.disable()
-(please wake up you son of a gun you):
+    user.sound_disable()
+talon sleep | snore | go to sleep:
+    speech.disable()
+    user.sound_disable()
+(chirp):
     speech.enable()
+    user.sound_enable()
 dragon sleep:
     speech.disable()
     user.engine_sleep()

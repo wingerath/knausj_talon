@@ -1,4 +1,5 @@
 from talon import Context, Module, app, actions, speech_system
+from playsound import playsound
 
 mod = Module()
 
@@ -30,6 +31,31 @@ class Actions:
                 actions.user.engine_wake()
                 # note: this may not do anything for all versions of Dragon. Requires Pro.
                 actions.user.engine_mimic("switch to command mode")
+
+    def playSound(file: str):
+        """plays a sound to indicate wake up"""
+        try:
+            playsound(file, block = False)
+        except:
+            playsound('user/talon_sounds/1778__junggle__ambient-buttons/29150__junggle__btn340.wav', block = False)
+
+    def sound_enable():
+        """audio signal for enabling speech"""
+        actions.user.playSound('user/talon_sounds/1778__junggle__ambient-buttons/29065__junggle__btn255.wav')
+
+    def sound_disable():
+        """audio signal for disabling speech"""
+        actions.user.playSound('user/talon_sounds/1778__junggle__ambient-buttons/29035__junggle__btn225.wav')
+
+    def enable_withSound():
+        """ensables the speech engine with a sound"""
+        actions.user.sound_enable()
+        actions.speech.enable()
+
+    def disable_withSound():
+        """disables the speech engine with a sound"""
+        actions.user.sound_disable()
+        actions.speech.disable()
 
     def dragon_mode():
         """For windows and Mac with Dragon, disables Talon commands and exits Dragon's command mode"""
