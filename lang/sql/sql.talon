@@ -4,7 +4,7 @@ and code.language: sql
 -
 active language: "SQL is working"
 select: "SELECT "
-select (star | everything): "SELECT * "
+select (star | everything | asterisk): "SELECT * "
 distinct: "DISTINCT "
 from: "FROM "
 where: "WHERE "

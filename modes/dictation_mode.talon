@@ -53,12 +53,6 @@ mark before <number_small> times:
 mark after <number_small> times:
     edit.extend_word_right()
     repeat(number_small - 1)
-mark left <number_small> times:
-    edit.extend_left()
-    repeat(number_small - 1)
-mark right <number_small> times:
-    edit.extend_right()
-    repeat(number_small - 1)
 mark up: edit.extend_line_up()
 mark down: edit.extend_line_down()
 mark before: edit.extend_word_left()

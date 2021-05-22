@@ -22,6 +22,6 @@ attack:
     user.abort_action()
     key("ctrl:down f:down")
 
-active language: "gaming (Don't Starve Together)"
+#active language: "gaming (Don't Starve Together)"
 
 
