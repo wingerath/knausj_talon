@@ -57,7 +57,24 @@ class Actions:
         actions.user.sound_disable()
         actions.speech.disable()
 
-    def dragon_mode():
+    def app_color_green():
+        """colors the talon icon green"""
+        app.icon_color(0, 0.7, 0, 1)#green
+
+    def app_color_red():
+        """colors the talon icon red"""
+        app.icon_color(1, 0, 0, 1)#red
+
+    def app_color_gray():
+        """colors the talon icon green"""
+        app.icon_color(0.5, 0.5, 0.5, 0.5)#gray
+
+    def app_color_black():
+        """colors the talon icon black"""
+        app.icon_color(0.5, 0.5, 0.5, 10)#black
+
+
+def dragon_mode():
         """For windows and Mac with Dragon, disables Talon commands and exits Dragon's command mode"""
         engine = speech_system.engine.name
         # app.notify(engine)
