@@ -18,9 +18,11 @@ sleep all:
 talon sleep | snore | go to sleep:
     speech.disable()
     user.sound_disable()
+    user.app_color_red()
 (chirp):
     speech.enable()
     user.sound_enable()
+    user.app_color_green()
 dragon sleep:
     speech.disable()
     user.engine_sleep()

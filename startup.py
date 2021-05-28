@@ -1,5 +1,5 @@
 from talon import actions, app
 
 def on_ready():
-    actions.speech.disable()
+    actions.user.microphone_select_none()
 app.register('launch', on_ready)

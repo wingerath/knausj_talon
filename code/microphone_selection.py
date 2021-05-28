@@ -61,6 +61,7 @@ class Actions:
         """Sets the microphone to None"""
         actions.speech.set_microphone("None")
         app.notify("Setting microphone to None")
+        actions.user.app_color_gray()
 
 
 ctx.register("devices_changed", devices_changed)

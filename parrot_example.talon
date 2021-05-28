@@ -1,8 +1,8 @@
 
 
-parrot(tongue_whistle): print("Activates at the start of a tongue_whistle sound")
-parrot(tongue_whistle:repeat): print("Activates during the tongue_whistle sound")
-parrot(tongue_whistle:stop): print("Activates when the tongue_whistle sound is stopped")
+parrot(palate_click): user.playSound('C:\\Users\\Wolle\\AppData\\Roaming\\talon\\user\\talon_sounds\\noice.mp3')
+parrot(palate_click:repeat): print("Activates during the palate_click sound")
+parrot(palate_click:stop): print("Activates when the palate_click sound is stopped")
 
 
 
