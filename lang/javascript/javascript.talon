@@ -1,17 +1,13 @@
-mode: command
-and mode: user.javascript
-mode: command
-and mode: user.auto_lang
-and code.language: javascript
+tag: user.javascript
 -
 tag(): user.code_imperative
 tag(): user.code_object_oriented
 
 tag(): user.code_comment_line
+tag(): user.code_comment_block_c_like
 tag(): user.code_data_bool
 tag(): user.code_data_null
 tag(): user.code_functions
-tag(): user.code_functions_gui
 tag(): user.code_libraries
 tag(): user.code_operators_array
 tag(): user.code_operators_assignment
@@ -36,24 +32,22 @@ state let: "let "
 
 state var: "var "
 
+state export: "export "
+
 state async: "async "
 
 state await: "await "
 
 state map:
-    insert(".map()")
-    key(left)
+    user.insert_between(".map(", ")")
 
 state filter:
-    insert(".filter()")
-    key(left)
+    user.insert_between(".filter(", ")")
 
 state reduce:
-    insert(".reduce()")
-    key(left)
+    user.insert_between(".reduce(", ")")
 
 state spread: "..."
 
 from import:
-    insert(' from  ""')
-    key("left")
+    user.insert_between(' from  "', '"')
