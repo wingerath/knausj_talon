@@ -5,5 +5,5 @@ sag <phrase>: insert(user.formatted_text("{phrase}", "NOOP"))
 
 
 
-^(english)$: mode.disable("user.de_DE")
+^(englisch)$: mode.disable("user.de_DE")
 
