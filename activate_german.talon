@@ -6,4 +6,6 @@ mode: command
     user.sound_enable()
 
 
+^german conformer: mode.enable("user.german_conformer")
+
 ^english$: skip()

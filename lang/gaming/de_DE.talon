@@ -1,6 +1,4 @@
-mode: user.de_DE
-mode: command
-and code.language: de_DE
+mode: user.german_conformer
 -
 
 settings():

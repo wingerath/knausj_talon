@@ -12,6 +12,7 @@ modes = {
     "windbg": "a way to force windbg commands to be loaded",
 
     "german": "german language",
+    "german_conformer": "german language with conformer",
 }
 
 for key, value in modes.items():
