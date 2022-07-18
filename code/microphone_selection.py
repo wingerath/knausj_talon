@@ -61,6 +61,11 @@ class Actions:
             app.notify(f"Activating microphone: {microphone_device_list[index - 1]}")
             gui.hide()
 
+    def microphone_select_none():
+        """Sets the microphone to None"""
+        actions.speech.set_microphone("None")
+        app.notify("Setting microphone to None")
+
 
 def on_ready():
     ctx.register("devices_changed", devices_changed)
