@@ -10,3 +10,4 @@ not mode: sleep
     mode.disable("sleep")
     mode.disable("dictation")
     mode.enable("command")
+dragon run <user.text>: user.engine_mimic("{text}")

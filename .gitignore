@@ -5,3 +5,8 @@ __pycache__
 # Locally generated
 /settings
 .vscode/settings.json
+
+.idea/**
+venv/**
+
+private.talon

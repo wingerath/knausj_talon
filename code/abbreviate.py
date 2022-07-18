@@ -80,7 +80,7 @@ abbreviations = {
     "enumerate": "enum",
     "environment": "env",
     "escape": "esc",
-    "etcetera": "etc",
+    "etcetera": "etc.",
     "example": "ex",
     "exception": "exc",
     "execute": "exec",

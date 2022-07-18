@@ -24,6 +24,8 @@ language_extensions = {
     "javascript": "js",
     "javascriptreact": "jsx",
     # 'json': 'json',
+    "kt": "kotlin",
+    "latex": "latex",
     # 'lua': 'lua',
     "markdown": "md",
     # 'perl': 'pl',

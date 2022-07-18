@@ -1,0 +1,11 @@
+meme it is what it is: "https://www.youtube.com/watch?v=Vm1yHwwfAic"
+meme team data: "https://www.youtube.com/watch?v=2y4xKNt_kbM"
+meme impossible: "https://www.youtube.com/watch?v=Q9-fYdy12PY"
+meme (super boy | super Junge): "https://www.youtube.com/watch?v=IqssrGv6UNI&t=43s"
+
+meme (hot | heiß): "https://www.youtube.com/watch?v=ZLN7Vx2ZVHk&t=96s"
+meme (honk): "https://www.youtube.com/watch?v=2sIKYlxDxwE"
+meme (long | long man): "https://www.youtube.com/watch?v=6-1Ue0FFrHY&amp;t=13s"
+meme (alarm | alert): "https://www.youtube.com/watch?v=tc-pRTk2r7k"
+meme (latest shit): "Denn ganz ehrlich, wo ist hier, wo ist der latest shit, ne? Wo ist das denn, wo passiert das denn? Wo ist der Merger, wo ist hier Fashion, wo ist Musik, wo ist Architektur? Ich seh so'n paar Prints, 'n paar Poster, aber das isses doch nicht. Bauhaus, was soll das denn? Die werden jetzt 100 Jahre alt nächstes Jahr. Kann ich doch mich – Ich kann mich doch daran nicht mehr erlabern, das muss doch weitergehen. Wo sind die Magazine, wo ist die Inspiration, wo ist Augumented Reality, wo ist das alles, wo sind die Oculus Rift-Brillen? Das ist alles so in der Komfortzone."
+meme machine learning: "https://youtu.be/YnL9vAFphmE?t=146"

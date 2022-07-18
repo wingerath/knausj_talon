@@ -5,8 +5,8 @@ address copy | url copy | copy address | copy url:
     browser.focus_address()
     sleep(50ms)
     edit.copy()
-go home: browser.go_home()
-[go] forward: browser.go_forward()
+go home site: browser.go_home()
+go forward: browser.go_forward()
 go (back | backward): browser.go_back()
 go to {user.website}: browser.go(website)
 go private: browser.open_private_window()
@@ -70,3 +70,9 @@ show cache: browser.show_clear_cache()
 # restore: key(X)
 # search tabs: key(T)
 # move to window: key(W)
+
+
+
+# vimium shortcuts:
+click: key(f)
+(click new | new tab): key(shift-f)

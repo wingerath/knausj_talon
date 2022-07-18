@@ -4,10 +4,10 @@ find it:
 next one:
     edit.find_next()
 
-go word left:
+(go word left | go before):
     edit.word_left()
 
-go word right:
+(go word right | go after):
     edit.word_right()
 
 go left:
@@ -54,43 +54,43 @@ go page up:
     edit.page_up()
 
 # selecting
-select line:
+mark line:
     edit.select_line()
 
-select all:
+mark all:
     edit.select_all()
 
-select left:
+mark left:
     edit.extend_left()
 
-select right:
+(mark right):
     edit.extend_right()
 
-select up:
+(mark up):
     edit.extend_line_up()
 
-select down:
+(mark down):
     edit.extend_line_down()
 
-select word:
+mark word:
     edit.select_word()
 
-select word left:
+(mark word left | mark before):
     edit.extend_word_left()
 
-select word right:
+(mark word right | mark after):
     edit.extend_word_right()
 
-select way left:
+mark way left:
     edit.extend_line_start()
 
-select way right:
+mark way right:
     edit.extend_line_end()
 
-select way up:
+mark way up:
     edit.extend_file_start()
 
-select way down:
+mark way down:
     edit.extend_file_end()
 
 # editing
@@ -107,7 +107,7 @@ clear line:
 clear left:
     key(backspace)
 
-clear right:
+(clear | delete) [that | right]:
     key(delete)
 
 clear up:

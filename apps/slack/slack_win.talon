@@ -27,9 +27,15 @@ focus (move | next): key(ctrl-`)
 grab left: key(shift-up)
 grab right: key(shift-down)
 add line: key(shift-enter)
+edit message:
+    key(up)
+    key(e)
+save changes:
+    key(enter)
+    key(down)
 #"(slack | lack) (slap | slaw | slapper): [key(cmd-right) key(shift-enter")],
 (slack | lack) (react | reaction): key(ctrl-shift-\)
-(insert command | commandify): key(ctrl-shift-c)
+(insert command | inline code | commandify): key(ctrl-shift-c)
 insert code: insert("```")
 (slack | lack) (bull | bullet | bulleted) [list]: key(ctrl-shift-8)
 (slack | lack) (number | numbered) [list]: key(ctrl-shift-7)
@@ -44,7 +50,7 @@ bold: key(ctrl-b)
 (slack | lack) invite: key(a)
 # Miscellaneous
 (slack | lack) shortcuts: key(ctrl-/)
-emote <user.text>: "{text}"
+emote <user.emoji>: insert(user.emoji)
 toggle left sidebar: key(ctrl-shift-d)
 toggle right sidebar: key(ctrl-.)
 

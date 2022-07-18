@@ -10,3 +10,14 @@ go <user.arrow_keys>: user.move_cursor(arrow_keys)
 press <user.modifiers>: key(modifiers)
 # for consistency with dictation mode and explicit arrow keys if you need them.
 press <user.keys>: key(keys)
+
+
+# hold and release modifiers
+hold <user.modifiers>: key("{modifiers}:down")
+(release | drop) <user.modifiers>: key("{modifiers}:up")
+
+<user.modifiers> space: key("{modifiers}-space")
+(number | num) <user.number_key>: key("keypad_{number_key}")
+(number | num) <user.key>: key("keypad_{key}")
+#if number < 10:
+#    actions.key("ctrl-keypad_{}".format(number))

@@ -53,11 +53,9 @@ find (everywhere | all) <user.text> [over]:
 (search | find) class: user.idea("action GotoClass")
 (search | find) file: user.idea("action GotoFile")
 (search | find) path: user.idea("action FindInPath")
-(search | find) symbol: user.idea("action GotoSymbol")
-(search | find) symbol <user.text>$:
-    user.idea("action GotoSymbol")
-    insert(text)
-    key("enter")
+go (search | find): key(ctrl-f)
+go (search | find) next: key(f3)
+go (search | find) (previous | prev): key(shift-f3)
 recent: user.idea("action RecentFiles")
 
 surround [this] with <user.text> [over]:
@@ -122,8 +120,8 @@ switch task: user.idea("action tasks.switch")
 clear task: user.idea("action tasks.close")
 configure servers: user.idea("action tasks.configure.servers")
 # Git / Github (not using verb-noun-adjective pattern, mirroring terminal commands.)
-git pull: user.idea("action Vcs.UpdateProject")
-git commit: user.idea("action CheckinProject")
+#git pull: user.idea("action Vcs.UpdateProject")
+#git commit: user.idea("action CheckinProject")
 git push: user.idea("action CheckinProject")
 git log: user.idea("action Vcs.ShowTabbedFileHistory")
 git browse: user.idea("action Github.Open.In.Browser")
@@ -136,6 +134,8 @@ git menu: user.idea("action Vcs.QuickListPopupAction")
 # Toggling various tool windows
 toggle project: user.idea("action ActivateProjectToolWindow")
 toggle find: user.idea("action ActivateFindToolWindow")
+run code: key(shift-f10)
+debug code: key(shift-f9)
 toggle run: user.idea("action ActivateRunToolWindow")
 toggle debug: user.idea("action ActivateDebugToolWindow")
 toggle events: user.idea("action ActivateEventLogToolWindow")
@@ -238,8 +238,18 @@ paste last <user.text> [over]: user.idea("find prev {text}, action EditorRight, 
 paste next <user.text> [over]: user.idea("find next {text}, action EditorRight, action EditorPaste")
 refactor last <user.text> [over]: user.idea("find prev {text}, action Refactorings.QuickListPopupAction")
 refactor next <user.text> [over]: user.idea("find next {text}, action Refactorings.QuickListPopupAction")
-replace last <user.text> [over]: user.idea("find prev {text}, action EditorPaste")
-replace next <user.text> [over]: user.idea("find next {text}, action EditorPaste")
+#replace last <user.text> [over]: user.idea("find prev {text}, action EditorPaste")
+#replace next <user.text> [over]: user.idea("find next {text}, action EditorPaste")
+replace: key(ctrl-r)
+select in: key(alt-f1)
+select in project:
+    key(alt-f1)
+    sleep(100ms)
+    key("1")
+select in explorer:
+    key(alt-f1)
+    sleep(100ms)
+    key("c")
 select last <user.text> [over]: user.idea("find prev {text}")
 select next <user.text> [over]: user.idea("find next {text}")
 
@@ -250,3 +260,17 @@ go camel right: user.camel_right()
 
 # requires plug-in: black-pycharm
 blacken: user.idea("action BLACKReformatCode")
+
+# git commands
+git pull: key(ctrl-t)
+git commit: key(ctrl-k)
+
+# manage panels
+go project: key(alt-1)
+go favorites: key(alt-2)
+go problems: key(alt-6)
+go structure: key(alt-7)
+go services: key(alt-8)
+go git: key(alt-9)
+
+hide panel: key(shift-escape)

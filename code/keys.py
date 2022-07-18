@@ -1,6 +1,10 @@
 from talon import Context, Module, actions, app
 
-default_alphabet = "air bat cap drum each fine gust harp sit jury crunch look made near odd pit quench red sun trap urge vest whale plex yank zip".split(
+from talon import Module, Context, actions, app
+import sys
+
+default_alphabet = "air bat cam drum each fine golf harm sit june crunch look mike nice odd pit quench red sun trap urge vest whale plex yank zip".split(
+# default_alphabet = "air bat cap drum each fine gust harp sit jury crunch look made near odd pit quench red sun trap urge vest whale plex yank zip".split(
     " "
 )
 letters_string = "abcdefghijklmnopqrstuvwxyz"
@@ -110,7 +114,8 @@ def letters(m) -> str:
 ctx = Context()
 modifier_keys = {
     # If you find 'alt' is often misrecognized, try using 'alter'.
-    "alt": "alt",  #'alter': 'alt',
+#    "alt": "alt",  #'alter': 'alt',
+    "option": "alt",  #'alter': 'alt',
     "control": "ctrl",  #'troll':   'ctrl',
     "shift": "shift",  #'sky':     'shift',
     "super": "super",
@@ -127,8 +132,8 @@ ctx.lists["self.letter"] = alphabet
 punctuation_words = {
     # TODO: I'm not sure why we need these, I think it has something to do with
     # Dragon. Possibly it has been fixed by later improvements to talon? -rntz
-    "`": "`",
-    ",": ",",  # <== these things
+#    "`": "`",
+#    ",": ",",  # <== these things
     "back tick": "`",
     "grave": "`",
     "comma": ",",
@@ -159,9 +164,11 @@ symbol_key_words = {
     "apostrophe": "'",
     "L square": "[",
     "left square": "[",
+    "open square": "[",
     "square": "[",
     "R square": "]",
     "right square": "]",
+    "close square": "]",
     "slash": "/",
     "backslash": "\\",
     "minus": "-",
@@ -176,13 +183,11 @@ symbol_key_words = {
     "L paren": "(",
     "left paren": "(",
     "R paren": ")",
+    "close paren": ")",
     "right paren": ")",
     "brace": "{",
     "left brace": "{",
-    "brack": "{",
-    "bracket": "{",
-    "left bracket": "{",
-    "r brace": "}",
+    "R brace": "}",
     "right brace": "}",
     "r brack": "}",
     "r bracket": "}",
@@ -202,6 +207,13 @@ symbol_key_words = {
     "pipe": "|",
     "dubquote": '"',
     "double quote": '"',
+
+    "german air": "ä",
+    "german odd": "ö",
+    "german urge": "ü",
+    "german sun": "ß",
+#    "asterisk": "*",
+
     # Currencies
     "dollar": "$",
     "pound": "£",
@@ -232,8 +244,9 @@ simple_keys = [
 ]
 
 alternate_keys = {
-    "wipe": "backspace",
-    "delete": "backspace",
+    "backspace": "backspace",
+    "go end": "end",
+    "go home": "home",
     #'junk': 'backspace',
     "forward delete": "delete",
     "page up": "pageup",

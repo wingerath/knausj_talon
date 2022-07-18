@@ -122,3 +122,8 @@ git commit highlighted:
     insert("git add ")
     edit.paste()
     insert("\ngit commit\n")
+
+git commit push:
+    insert("git commit -a -m '';git pull origin;git push -u origin;git status;")
+    edit.paste()
+    key("left:49")

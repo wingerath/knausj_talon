@@ -79,3 +79,9 @@ and app.exe: powershell.exe
 apps.vim = """
 win.title:/VIM/
 """
+
+# other apps
+apps.athena = """
+tag: browser
+and win.title:/Athena/
+"""
