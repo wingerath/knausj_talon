@@ -22,6 +22,7 @@ language: de_DE
 
 talon sleep | snore | go to sleep: skip()
 
+#<phrase>: insert(user.formatted_text("{phrase}", 'DRAGON_TEXT'))
 
 Umbruch: key("shift-enter")
 

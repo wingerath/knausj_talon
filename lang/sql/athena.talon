@@ -29,7 +29,6 @@ order by <user.text>$:
 having: "HAVING "
 like: " LIKE "
 limit: "LIMIT "
-order by: "ORDER BY "
 descending: " DESC"
 between: " BETWEEN "
 ascending: " ASC"

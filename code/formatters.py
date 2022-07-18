@@ -76,6 +76,34 @@ def words_with_joiner(joiner):
     return (NOSEP, lambda i, word, _: ("" if i == 0 else joiner) + word)
 
 
+dictNoSpace = {
+    "Komma": ",",
+    "Ausrufezeichen": "!",
+    "Fragezeichen": "?",
+    "Bindestrich": "-",
+    "Unterstrich": "_",
+    "Semikolon": ";",
+    "Doppelpunkt": ":",
+    "Punkt": ".",
+    "Schrägstrich": "/",
+    "Backslash": "\\",
+    "Apostroph": "'",
+    "Leertaste": " ",
+    "at": "@",
+}
+dictSpace = {
+    "Und-Zeichen": "&",
+    "Prozentzeichen": "%",
+    "Dollarzeichen": "$",
+    "Gänsefüßchen": '"',
+    "Gleichzeichen": "=",
+    "Gedankenstrich": "–",
+}
+def dragon_text():
+    """Pass through words unchanged, but replace punctuation and other stuff that has wrongfully been written out."""
+    return (NOSEP, lambda i, word, _: (dictNoSpace.get(word, (" ") + dictSpace.get(word, word))))
+
+
 def first_vs_rest(first_func, rest_func=lambda w: w):
     """Supply one or two transformer functions for the first and rest of
     words respectively.
@@ -112,6 +140,7 @@ formatters_dict = {
     ),
     "NO_SPACES": (NOSEP, every_word(lambda w: w)),
     "DASH_SEPARATED": words_with_joiner("-"),
+    "DRAGON_TEXT": dragon_text(),
     "TERMINAL_DASH_SEPARATED": (
         NOSEP,
         first_vs_rest(lambda w: " --" + w.lower(), lambda w: "-" + w.lower()),

@@ -1,8 +1,9 @@
-
+mode: command
+-
 
 parrot(tut):
 	print("tut")
-#	key("xxx")
+# 	key("x")
 
 parrot(pop):
 	print("pop")
