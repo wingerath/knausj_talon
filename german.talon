@@ -15,7 +15,7 @@ language: de_DE
 ^microphone off$:
     user.engine_mimic("Mikrofon ausschalten")
 	  mode.disable("user.german")
-  	mode.disable("user.de_DE")
+#  	mode.disable("user.de_DE")
     user.microphone_select_none()
     user.sound_disable()
 
