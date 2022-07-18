@@ -1,5 +1,8 @@
 not mode: sleep
 -
+talon sleep | snore | go to sleep:
+    speech.disable()
+    user.sound_disable()
 ^dictation mode$:
     mode.disable("sleep")
     mode.disable("command")

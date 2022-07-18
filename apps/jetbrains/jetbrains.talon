@@ -10,7 +10,7 @@ tag(): user.tabs
 # Auto complete
 complete: user.idea("action CodeCompletion")
 perfect: user.idea("action CodeCompletion,action CodeCompletion")
-smart: user.idea("action SmartTypeCompletion")
+#smart: user.idea("action SmartTypeCompletion")
 (done | finish): user.idea("action EditorCompleteStatement")
 # Copying
 grab <number>: user.idea_grab(number)
