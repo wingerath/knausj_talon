@@ -4,12 +4,9 @@ import re
 from talon import actions, Context, Module
 
 mod = Module()
+mod.tag("DST", desc="game: Don't Starve Together")
 ctx = Context()
-ctx.matches = r"""
-mode: user.gaming_DontStarveTogether
-mode: command 
-and code.language: gaming_DontStarveTogether
-"""
+ctx.matches = "tag: user.DST"
 
 @mod.action_class
 class Actions:
@@ -30,3 +27,12 @@ class Actions:
     def test_action():
         """a test action"""
         actions.key("x")
+
+
+@ctx.action_class("user")
+class Actions:
+    def facialActionMapping():
+        """reacts to a given facial action"""
+        return {
+            "BrowsUp": "ctrl:{upOrDown}",
+        }
