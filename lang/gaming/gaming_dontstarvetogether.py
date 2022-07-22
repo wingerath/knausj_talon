@@ -31,8 +31,11 @@ class Actions:
 
 @ctx.action_class("user")
 class Actions:
-    def facialActionMapping():
-        """reacts to a given facial action"""
-        return {
-            "BrowsUp": "ctrl:{upOrDown}",
-        }
+
+    def BrowsUp_on():
+        """reacts to the given facial action commencing"""
+        actions.key("ctrl:down")
+
+    def BrowsUp_off():
+        """reacts to the given facial action stopping"""
+        actions.key("ctrl:up")
