@@ -1,5 +1,6 @@
 language: de_DE
-and app: slack
+app: slack
+app: obsidian
 -
 
 <phrase>: insert(user.formatted_text("{phrase}", 'DRAGON_TEXT'))
