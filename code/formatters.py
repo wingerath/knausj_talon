@@ -80,16 +80,9 @@ dictNoSpace = {
     "Komma": ",",
     "Ausrufezeichen": "!",
     "Fragezeichen": "?",
-    "Bindestrich": "-",
-    "Unterstrich": "_",
     "Semikolon": ";",
     "Doppelpunkt": ":",
     "Punkt": ".",
-    "Schrägstrich": "/",
-    "Backslash": "\\",
-    "Apostroph": "'",
-    "Leertaste": " ",
-    "at": "@",
 }
 dictSpace = {
     "Und-Zeichen": "&",
@@ -101,7 +94,7 @@ dictSpace = {
 }
 def dragon_text():
     """Pass through words unchanged, but replace punctuation and other stuff that has wrongfully been written out."""
-    return (NOSEP, lambda i, word, _: (dictNoSpace.get(word, (" ") + dictSpace.get(word, word))))
+    return (NOSEP, lambda i, word, _: (dictNoSpace.get(word, ("" if i == 0 else " ") + dictSpace.get(word, word))))
 
 
 def first_vs_rest(first_func, rest_func=lambda w: w):

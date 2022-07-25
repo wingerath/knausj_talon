@@ -19,8 +19,6 @@ parrot(pop):
 parrot(tut):
 	key(shift)
 
-(chirp): speech.enable()
-
 abort: user.abort_action()
 
 pick up:

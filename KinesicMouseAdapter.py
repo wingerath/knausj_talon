@@ -1,10 +1,12 @@
 from talon import Module, Context, actions, ui, imgui, clip, settings
 import re
 
-from talon import actions, Context, Module
+from talon import actions, Context, Module, cron
 
 mod = Module()
 ctx = Context()
+
+activeFacialActions = set()
 
 facialActionMapping = {
     "BrowDownLeft": { "down": actions.user.BrowDownLeft_on, "up": actions.user.BrowDownLeft_off },
@@ -71,18 +73,37 @@ facialActionMapping = {
     "TongueOut": { "down": actions.user.TongueOut_on, "up": actions.user.TongueOut_off },
 }
 
+cronjobs = {
+    "modifier_disable": None
+}
+facialActionModifier = "CheekPuff"
+
 @mod.action_class
 class Actions:
+
     def genericFacialAction(facialAction: str, upOrDown: str):
         """reacts to a given facial action"""
+        if (upOrDown == "down"):
+            activeFacialActions.add(facialAction)
+            if (facialAction == facialActionModifier):
+                cron.cancel(cronjobs["modifier_disable"])
+                cronjobs["modifier_disable"] = cron.after("1000ms", lambda: activeFacialActions.discard(facialAction))
+                #elif (upOrDown == "up"): activeFacialActions.discard(facialAction)
         actionPair = facialActionMapping.get(facialAction)
         if (actionPair is None):
             return # do nothing when there is no mapping
 
         actionToExecute = actionPair[upOrDown]
-        if (actionPair is None):
+        if (actionToExecute is None):
             return # do nothing when there is no mapping
         actionToExecute()
+
+    def isFacialActionModifierActive():
+        """returns whether CheekPuff is among the currently active i#"""
+        return facialActionModifier in activeFacialActions
+
+    def CheekPuff_on(): """reacts to the CheekPuff facial action commencing"""
+    def CheekPuff_off():  """reacts to the CheekPuff facial action stopping"""
 
     def BrowDownLeft_on(): """reacts to the BrowDownLeft facial action commencing"""
     def BrowDownLeft_off(): """reacts to the BrowDownLeft facial action stopping"""
@@ -104,9 +125,6 @@ class Actions:
 
     def BrowsUp_on():  """reacts to the BrowsUp facial action commencing"""
     def BrowsUp_off():  """reacts to the BrowsUp facial action stopping"""
-
-    def CheekPuff_on():  """reacts to the CheekPuff facial action commencing"""
-    def CheekPuff_off():  """reacts to the CheekPuff facial action stopping"""
 
     def CheekSquintLeft_on():  """reacts to the CheekSquintLeft facial action commencing"""
     def CheekSquintLeft_off():  """reacts to the CheekSquintLeft facial action stopping"""

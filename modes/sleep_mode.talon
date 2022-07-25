@@ -7,7 +7,7 @@ settings():
 	user.mouse_enable_pop_click = 0
 
 #this exists solely to prevent talon from walking up super easily in sleep mode at the moment with wav2letter
-#<phrase>: skip()
+<phrase>: skip()
 
 (chirp):
     speech.enable()

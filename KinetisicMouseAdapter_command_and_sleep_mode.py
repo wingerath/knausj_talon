@@ -1,0 +1,30 @@
+from talon import Module, Context, actions, ui, imgui, clip, settings
+import re
+
+from talon import actions, Context, Module
+
+mod = Module()
+ctx = Context()
+ctx.matches = """mode: sleep
+mode: command"""
+
+@ctx.action_class("user")
+class Actions:
+
+    def BrowsUp_on():
+        """reacts to the given facial action commencing"""
+        if (actions.user.isFacialActionModifierActive()):
+            for x in range(8):
+                actions.user.mouse_scroll_up()
+                actions.sleep("50ms")
+    def BrowsUp_off():
+        """reacts to the given facial action stopping"""
+
+    def NoseSneer_on():
+        """reacts to the NoseSneer facial action commencing"""
+        if (actions.user.isFacialActionModifierActive()):
+            for x in range(8):
+                actions.user.mouse_scroll_down()
+                actions.sleep("50ms")
+    def NoseSneer_off():
+        """reacts to the NoseSneer facial action stopping"""
