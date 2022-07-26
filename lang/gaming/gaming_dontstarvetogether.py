@@ -32,10 +32,18 @@ class Actions:
 @ctx.action_class("user")
 class Actions:
 
-    def BrowsUp_on():
-        """reacts to the given facial action commencing"""
-        actions.key("ctrl:down")
+    def BrowsUp_on(): actions.key("f:down")
+    def BrowsUp_off(): actions.key("f:up")
 
-    def BrowsUp_off():
-        """reacts to the given facial action stopping"""
-        actions.key("ctrl:up")
+    # WASD
+    def MouthPucker_on(): actions.key("w:down")
+    def MouthPucker_off(): actions.key("w:up")
+
+    def MouthLeft_on(): actions.key("a:down")
+    def MouthLeft_off(): actions.key("a:up")
+
+    def NoseSneer_on(): actions.key("s:down")
+    def NoseSneer_off(): actions.key("s:up")
+
+    def MouthRight_on(): actions.key("d:down")
+    def MouthRight_off(): actions.key("d:up")

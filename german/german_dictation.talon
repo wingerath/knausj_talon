@@ -3,8 +3,6 @@ app: obsidian
 app: slack
 -
 
-öffne Diktierfenster: key(ctrl-shift-d)
-
 Leertaste: " "
 Gänsefüßchen: insert('"')
 Bindestrich: insert('-')
