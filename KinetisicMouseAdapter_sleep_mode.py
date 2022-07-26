@@ -13,8 +13,8 @@ class Actions:
     def TongueOut_on():
         """reacts to the TongueOut facial action commencing"""
         if (actions.user.isFacialActionModifierActive()):
-#            actions.user.engine_mimic("chirp")
-#            actions.user.microphone_select(2)
             actions.speech.set_microphone("System Default")
-            actions.speech.enable()
-            actions.user.sound_enable()
+            actions.user.engine_mimic("chirp")
+#            actions.user.microphone_select(2)
+#            actions.speech.enable()
+#            actions.user.sound_enable()

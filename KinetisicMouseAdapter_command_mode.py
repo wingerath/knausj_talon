@@ -1,11 +1,12 @@
 from talon import Module, Context, actions, ui, imgui, clip, settings
 import re
 
-from talon import actions, Context, Module
+from talon import actions, Context, Module, cron
 
 mod = Module()
 ctx = Context()
-ctx.matches = "mode: command"
+ctx.matches = """mode: command"""
+
 
 @ctx.action_class("user")
 class Actions:
@@ -18,3 +19,5 @@ class Actions:
 #            actions.user.microphone_select(2)
 #            actions.speech.disable()
 #            actions.user.sound_disable()
+
+

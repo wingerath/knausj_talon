@@ -74,7 +74,8 @@ facialActionMapping = {
 }
 
 cronjobs = {
-    "modifier_disable": None
+    "modifier_disable": None,
+    "mouse_scroll": None
 }
 facialActionModifier = "CheekPuff"
 
@@ -105,6 +106,86 @@ class Actions:
     def CheekPuff_on(): """reacts to the CheekPuff facial action commencing"""
     def CheekPuff_off():  """reacts to the CheekPuff facial action stopping"""
 
+    def TongueOut_on():  """reacts to the TongueOut facial action commencing"""
+    def TongueOut_off():  """reacts to the TongueOut facial action stopping"""
+
+    def MouthPress_on():  """reacts to the MouthPress facial action commencing"""
+    def MouthPress_off():  """reacts to the MouthPress facial action stopping"""
+
+    def BrowsUp_on():  """reacts to the BrowsUp facial action commencing"""
+    def BrowsUp_off():  """reacts to the BrowsUp facial action stopping"""
+
+    def BrowsDown_on():  """reacts to the BrowsDown facial action commencing"""
+    def BrowsDown_off():  """reacts to the BrowsDown facial action stopping"""
+
+
+    # WASD
+    def MouthPucker_on():  """reacts to the MouthPucker facial action commencing"""
+    def MouthPucker_off():  """reacts to the MouthPucker facial action stopping"""
+
+    def MouthLeft_on():  """reacts to the MouthLeft facial action commencing"""
+    def MouthLeft_off():  """reacts to the MouthLeft facial action stopping"""
+
+    def NoseSneer_on():  """reacts to the NoseSneer facial action commencing"""
+    def NoseSneer_off():  """reacts to the NoseSneer facial action stopping"""
+
+    def MouthRight_on():  """reacts to the MouthRight facial action commencing"""
+    def MouthRight_off():  """reacts to the MouthRight facial action stopping"""
+
+    def JawOpen_on():  """reacts to the JawOpen facial action commencing"""
+    def JawOpen_off():  """reacts to the JawOpen facial action stopping"""
+
+
+    # WASD
+    def EyesUp_on():  """reacts to the EyesUp facial action commencing"""
+    def EyesUp_off():  """reacts to the EyesUp facial action stopping"""
+
+    def EyesLeft_on():  """reacts to the EyesLeft facial action commencing"""
+    def EyesLeft_off():  """reacts to the EyesLeft facial action stopping"""
+
+    def EyesDown_on():  """reacts to the EyesDown facial action commencing"""
+    def EyesDown_off():  """reacts to the EyesDown facial action stopping"""
+
+    def EyesRight_on():  """reacts to the EyesRight facial action commencing"""
+    def EyesRight_off():  """reacts to the EyesRight facial action stopping"""
+
+
+
+
+
+
+    def EyesWide_on():  """reacts to the EyesWide facial action commencing"""
+    def EyesWide_off():  """reacts to the EyesWide facial action stopping"""
+
+    def EyesBlink_on():  """reacts to the EyesBlink facial action commencing"""
+    def EyesBlink_off():  """reacts to the EyesBlink facial action stopping"""
+
+    def MouthStretch_on():  """reacts to the MouthStretch facial action commencing"""
+    def MouthStretch_off():  """reacts to the MouthStretch facial action stopping"""
+
+    def MouthClose_on():  """reacts to the MouthClose facial action commencing"""
+    def MouthClose_off():  """reacts to the MouthClose facial action stopping"""
+
+    def MouthDimple_on():  """reacts to the MouthDimple facial action commencing"""
+    def MouthDimple_off():  """reacts to the MouthDimple facial action stopping"""
+
+    def MouthFrown_on():  """reacts to the MouthFrown facial action commencing"""
+    def MouthFrown_off():  """reacts to the MouthFrown facial action stopping"""
+
+    def MouthFunnel_on():  """reacts to the MouthFunnel facial action commencing"""
+    def MouthFunnel_off():  """reacts to the MouthFunnel facial action stopping"""
+
+    def MouthRoll_on():  """reacts to the MouthRoll facial action commencing"""
+    def MouthRoll_off():  """reacts to the MouthRoll facial action stopping"""
+
+    def MouthSmile_on():  """reacts to the MouthSmile facial action commencing"""
+    def MouthSmile_off():  """reacts to the MouthSmile facial action stopping"""
+
+
+
+
+
+
     def BrowDownLeft_on(): """reacts to the BrowDownLeft facial action commencing"""
     def BrowDownLeft_off(): """reacts to the BrowDownLeft facial action stopping"""
 
@@ -119,12 +200,6 @@ class Actions:
 
     def BrowUpRight_on():  """reacts to the BrowUpRight facial action commencing"""
     def BrowUpRight_off():  """reacts to the BrowUpRight facial action stopping"""
-
-    def BrowsDown_on():  """reacts to the BrowsDown facial action commencing"""
-    def BrowsDown_off():  """reacts to the BrowsDown facial action stopping"""
-
-    def BrowsUp_on():  """reacts to the BrowsUp facial action commencing"""
-    def BrowsUp_off():  """reacts to the BrowsUp facial action stopping"""
 
     def CheekSquintLeft_on():  """reacts to the CheekSquintLeft facial action commencing"""
     def CheekSquintLeft_off():  """reacts to the CheekSquintLeft facial action stopping"""
@@ -150,26 +225,8 @@ class Actions:
     def EyeWideRight_on():  """reacts to the EyeWideRight facial action commencing"""
     def EyeWideRight_off():  """reacts to the EyeWideRight facial action stopping"""
 
-    def EyesBlink_on():  """reacts to the EyesBlink facial action commencing"""
-    def EyesBlink_off():  """reacts to the EyesBlink facial action stopping"""
-
-    def EyesDown_on():  """reacts to the EyesDown facial action commencing"""
-    def EyesDown_off():  """reacts to the EyesDown facial action stopping"""
-
-    def EyesLeft_on():  """reacts to the EyesLeft facial action commencing"""
-    def EyesLeft_off():  """reacts to the EyesLeft facial action stopping"""
-
-    def EyesRight_on():  """reacts to the EyesRight facial action commencing"""
-    def EyesRight_off():  """reacts to the EyesRight facial action stopping"""
-
     def EyesSquint_on():  """reacts to the EyesSquint facial action commencing"""
     def EyesSquint_off():  """reacts to the EyesSquint facial action stopping"""
-
-    def EyesUp_on():  """reacts to the EyesUp facial action commencing"""
-    def EyesUp_off():  """reacts to the EyesUp facial action stopping"""
-
-    def EyesWide_on():  """reacts to the EyesWide facial action commencing"""
-    def EyesWide_off():  """reacts to the EyesWide facial action stopping"""
 
     def JawForward_on():  """reacts to the JawForward facial action commencing"""
     def JawForward_off():  """reacts to the JawForward facial action stopping"""
@@ -177,17 +234,8 @@ class Actions:
     def JawLeft_on():  """reacts to the JawLeft facial action commencing"""
     def JawLeft_off():  """reacts to the JawLeft facial action stopping"""
 
-    def JawOpen_on():  """reacts to the JawOpen facial action commencing"""
-    def JawOpen_off():  """reacts to the JawOpen facial action stopping"""
-
     def JawRight_on():  """reacts to the JawRight facial action commencing"""
     def JawRight_off():  """reacts to the JawRight facial action stopping"""
-
-    def MouthClose_on():  """reacts to the MouthClose facial action commencing"""
-    def MouthClose_off():  """reacts to the MouthClose facial action stopping"""
-
-    def MouthDimple_on():  """reacts to the MouthDimple facial action commencing"""
-    def MouthDimple_off():  """reacts to the MouthDimple facial action stopping"""
 
     def MouthDimpleLeft_on():  """reacts to the MouthDimpleLeft facial action commencing"""
     def MouthDimpleLeft_off():  """reacts to the MouthDimpleLeft facial action stopping"""
@@ -195,20 +243,11 @@ class Actions:
     def MouthDimpleRight_on():  """reacts to the MouthDimpleRight facial action commencing"""
     def MouthDimpleRight_off():  """reacts to the MouthDimpleRight facial action stopping"""
 
-    def MouthFrown_on():  """reacts to the MouthFrown facial action commencing"""
-    def MouthFrown_off():  """reacts to the MouthFrown facial action stopping"""
-
     def MouthFrownLeft_on():  """reacts to the MouthFrownLeft facial action commencing"""
     def MouthFrownLeft_off():  """reacts to the MouthFrownLeft facial action stopping"""
 
     def MouthFrownRight_on():  """reacts to the MouthFrownRight facial action commencing"""
     def MouthFrownRight_off():  """reacts to the MouthFrownRight facial action stopping"""
-
-    def MouthFunnel_on():  """reacts to the MouthFunnel facial action commencing"""
-    def MouthFunnel_off():  """reacts to the MouthFunnel facial action stopping"""
-
-    def MouthLeft_on():  """reacts to the MouthLeft facial action commencing"""
-    def MouthLeft_off():  """reacts to the MouthLeft facial action stopping"""
 
     def MouthLowerDown_on():  """reacts to the MouthLowerDown facial action commencing"""
     def MouthLowerDown_off():  """reacts to the MouthLowerDown facial action stopping"""
@@ -219,23 +258,11 @@ class Actions:
     def MouthLowerDownRight_on():  """reacts to the MouthLowerDownRight facial action commencing"""
     def MouthLowerDownRight_off():  """reacts to the MouthLowerDownRight facial action stopping"""
 
-    def MouthPress_on():  """reacts to the MouthPress facial action commencing"""
-    def MouthPress_off():  """reacts to the MouthPress facial action stopping"""
-
     def MouthPressLeft_on():  """reacts to the MouthPressLeft facial action commencing"""
     def MouthPressLeft_off():  """reacts to the MouthPressLeft facial action stopping"""
 
     def MouthPressRight_on():  """reacts to the MouthPressRight facial action commencing"""
     def MouthPressRight_off():  """reacts to the MouthPressRight facial action stopping"""
-
-    def MouthPucker_on():  """reacts to the MouthPucker facial action commencing"""
-    def MouthPucker_off():  """reacts to the MouthPucker facial action stopping"""
-
-    def MouthRight_on():  """reacts to the MouthRight facial action commencing"""
-    def MouthRight_off():  """reacts to the MouthRight facial action stopping"""
-
-    def MouthRoll_on():  """reacts to the MouthRoll facial action commencing"""
-    def MouthRoll_off():  """reacts to the MouthRoll facial action stopping"""
 
     def MouthRollLower_on():  """reacts to the MouthRollLower facial action commencing"""
     def MouthRollLower_off():  """reacts to the MouthRollLower facial action stopping"""
@@ -249,17 +276,11 @@ class Actions:
     def MouthShrugUpper_on():  """reacts to the MouthShrugUpper facial action commencing"""
     def MouthShrugUpper_off():  """reacts to the MouthShrugUpper facial action stopping"""
 
-    def MouthSmile_on():  """reacts to the MouthSmile facial action commencing"""
-    def MouthSmile_off():  """reacts to the MouthSmile facial action stopping"""
-
     def MouthSmileLeft_on():  """reacts to the MouthSmileLeft facial action commencing"""
     def MouthSmileLeft_off():  """reacts to the MouthSmileLeft facial action stopping"""
 
     def MouthSmileRight_on():  """reacts to the MouthSmileRight facial action commencing"""
     def MouthSmileRight_off():  """reacts to the MouthSmileRight facial action stopping"""
-
-    def MouthStretch_on():  """reacts to the MouthStretch facial action commencing"""
-    def MouthStretch_off():  """reacts to the MouthStretch facial action stopping"""
 
     def MouthStretchLeft_on():  """reacts to the MouthStretchLeft facial action commencing"""
     def MouthStretchLeft_off():  """reacts to the MouthStretchLeft facial action stopping"""
@@ -276,14 +297,8 @@ class Actions:
     def MouthUpperUpRight_on():  """reacts to the MouthUpperUpRight facial action commencing"""
     def MouthUpperUpRight_off():  """reacts to the MouthUpperUpRight facial action stopping"""
 
-    def NoseSneer_on():  """reacts to the NoseSneer facial action commencing"""
-    def NoseSneer_off():  """reacts to the NoseSneer facial action stopping"""
-
     def NoseSneerLeft_on():  """reacts to the NoseSneerLeft facial action commencing"""
     def NoseSneerLeft_off():  """reacts to the NoseSneerLeft facial action stopping"""
 
     def NoseSneerRight_on():  """reacts to the NoseSneerRight facial action commencing"""
     def NoseSneerRight_off():  """reacts to the NoseSneerRight facial action stopping"""
-
-    def TongueOut_on():  """reacts to the TongueOut facial action commencing"""
-    def TongueOut_off():  """reacts to the TongueOut facial action stopping"""

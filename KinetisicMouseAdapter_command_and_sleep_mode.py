@@ -1,12 +1,15 @@
 from talon import Module, Context, actions, ui, imgui, clip, settings
 import re
 
-from talon import actions, Context, Module
+from talon import actions, Context, Module, cron
 
 mod = Module()
 ctx = Context()
-ctx.matches = """mode: sleep
-mode: command"""
+#ctx.matches = """mode: command"""
+
+cronjobs = {
+    "mouse_scroll": None,
+}
 
 @ctx.action_class("user")
 class Actions:
@@ -14,17 +17,24 @@ class Actions:
     def BrowsUp_on():
         """reacts to the given facial action commencing"""
         if (actions.user.isFacialActionModifierActive()):
-            for x in range(8):
-                actions.user.mouse_scroll_up()
-                actions.sleep("50ms")
+            actions.user.mouse_scroll_up()
+            cron.cancel(cronjobs["mouse_scroll"])
+            cronjobs["mouse_scroll"] = cron.interval("80ms", lambda: actions.user.mouse_scroll_up())
     def BrowsUp_off():
         """reacts to the given facial action stopping"""
+        cron.cancel(cronjobs["mouse_scroll"])
 
     def NoseSneer_on():
         """reacts to the NoseSneer facial action commencing"""
         if (actions.user.isFacialActionModifierActive()):
-            for x in range(8):
-                actions.user.mouse_scroll_down()
-                actions.sleep("50ms")
+            actions.user.mouse_scroll_down()
+            cron.cancel(cronjobs["mouse_scroll"])
+            cronjobs["mouse_scroll"] = cron.interval("80ms", lambda: actions.user.mouse_scroll_down())
     def NoseSneer_off():
         """reacts to the NoseSneer facial action stopping"""
+        cron.cancel(cronjobs["mouse_scroll"])
+
+
+
+
+
