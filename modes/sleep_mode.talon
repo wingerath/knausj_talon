@@ -9,6 +9,18 @@ settings():
 #this exists solely to prevent talon from walking up super easily in sleep mode at the moment with wav2letter
 <phrase>: skip()
 
-(chirp):
+^(chirp)$:
     speech.enable()
     user.sound_enable()
+
+^chirp german$:
+    user.engine_mimic("chirp")
+    sleep(.5)
+    user.engine_mimic("german")
+
+
+^microphone off$:
+    user.microphone_select_none()
+    speech.enable()
+    user.sound_disable()
+

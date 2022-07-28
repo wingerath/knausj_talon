@@ -1,3 +1,4 @@
+-
 zoom in: edit.zoom_in()
 zoom out: edit.zoom_out()
 zoom reset: edit.zoom_reset()
@@ -13,3 +14,10 @@ save that: edit.save()
 kill: key(backspace)
 (pad | padding): user.insert_between(" ", " ")
 slap: edit.line_insert_down()
+
+
+neue Zeile: key("enter")
+
+
+
+
