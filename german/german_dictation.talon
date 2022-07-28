@@ -1,7 +1,6 @@
 language: de_DE
 -
 
-Kleinbuchstaben: insert('')
 Leertaste: insert(' ')
 Gänsefüßchen: insert('"')
 Bindestrich: insert('-')
@@ -23,5 +22,9 @@ shift tab: key("tab")
 
 
 <phrase>: insert(user.formatted_text("{phrase}", 'DRAGON_TEXT'))
+groß <phrase>: insert(user.formatted_text(user.formatted_text("{phrase}", "CAPITALIZE_FIRST_WORD"), "DRAGON_TEXT"))
+Kleinbuchstaben <phrase>: insert(user.formatted_text(user.formatted_text("{phrase}", "LOWERCASE_FIRST_WORD"), "DRAGON_TEXT"))
 öffne Diktierfenster: key(ctrl-shift-d)
 
+(left | links): key("left")
+(right | rechts): key("right")

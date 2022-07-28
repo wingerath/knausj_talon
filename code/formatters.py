@@ -149,6 +149,7 @@ formatters_dict = {
     "DOT_SNAKE": (NOSEP, lambda i, word, _: "." + word if i == 0 else "_" + word),
     "SLASH_SEPARATED": (NOSEP, every_word(lambda w: "/" + w)),
     "CAPITALIZE_FIRST_WORD": (SEP, first_vs_rest(lambda w: w.capitalize())),
+    "LOWERCASE_FIRST_WORD": (SEP, first_vs_rest(lambda w: w.lower())),
     "CAPITALIZE_ALL_WORDS": (
         SEP,
         lambda i, word, _: word.capitalize()

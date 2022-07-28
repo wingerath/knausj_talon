@@ -33,8 +33,6 @@ Schmaler machen:
   key("left:2")
   insert("|200")
 
-(left | links): key("left")
-(right | rechts): key("right")
 
 
 
