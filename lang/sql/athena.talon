@@ -67,8 +67,15 @@ count if:
     insert("COUNT_IF() ")
     key("left left")
 count (all | star | asterisk): "COUNT() "
+count (all | star | asterisk) as <user.text>:
+    insert("COUNT() AS ")
+    insert(user.formatted_text(text, "PRIVATE_CAMEL_CASE"))
 
 state <user.text> equals: "{user.text} = "
+
+transform:
+    insert("TRANSFORM()")
+    key("left")
 
 # Presto functions
 (approx | approximate) (perc | percentile):
