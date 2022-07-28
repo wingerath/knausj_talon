@@ -5,7 +5,7 @@ from talon import actions, Context, Module, cron
 
 mod = Module()
 ctx = Context()
-#ctx.matches = """mode: command"""
+ctx.matches = ""
 
 cronjobs = {
     "mouse_scroll": None,
@@ -33,6 +33,14 @@ class Actions:
     def NoseSneer_off():
         """reacts to the NoseSneer facial action stopping"""
         cron.cancel(cronjobs["mouse_scroll"])
+
+    def MouthPress_on():
+        """reacts to the NoseSneer facial action commencing"""
+        if (actions.user.isFacialActionModifierActive()):
+            actions.user.mouse_drag(1)
+    def MouthPress_off():
+        """reacts to the NoseSneer facial action stopping"""
+        actions.user.mouse_drag_end()
 
 
 

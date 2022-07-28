@@ -100,8 +100,12 @@ class Actions:
         actionToExecute()
 
     def isFacialActionModifierActive():
-        """returns whether CheekPuff is among the currently active i#"""
+        """returns whether CheekPuff is among the currently active"""
         return facialActionModifier in activeFacialActions
+
+    def getCurrentMillis():
+        """returns whether CheekPuff is among the currently active"""
+        return int(round(time.time() * 1000))
 
     def CheekPuff_on(): """reacts to the CheekPuff facial action commencing"""
     def CheekPuff_off():  """reacts to the CheekPuff facial action stopping"""
