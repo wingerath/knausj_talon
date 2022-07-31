@@ -36,10 +36,12 @@ go way right:
     edit.line_end()
 
 go way down:
-    edit.file_end()
+    #edit.file_end()
+    key("ctrl-end")
 
 go way up:
-    edit.file_start()
+    #edit.file_start()
+    key("ctrl-home")
 
 go bottom:
     edit.file_end()
@@ -76,10 +78,12 @@ mark word:
     edit.select_word()
 
 (mark word left | mark before):
-    edit.extend_word_left()
+    #edit.extend_word_left()
+    key("ctrl-shift-left")
 
 (mark word right | mark after):
-    edit.extend_word_right()
+    #edit.extend_word_right()
+    key("ctrl-shift-right")
 
 mark way left:
     edit.extend_line_start()

@@ -12,7 +12,7 @@ redo that: edit.redo()
 paste match: edit.paste_match_style()
 save that: edit.save()
 kill: key(backspace)
-(pad | padding): user.insert_between(" ", " ")
+#(pad | padding): user.insert_between(" ", " ")
 slap: edit.line_insert_down()
 
 
