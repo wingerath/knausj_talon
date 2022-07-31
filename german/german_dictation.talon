@@ -1,4 +1,5 @@
 language: de_DE
+not app: /Dragon for Windows/
 -
 
 Leertaste: insert(' ')

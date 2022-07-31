@@ -91,6 +91,7 @@ dictSpace = {
     "Gänsefüßchen": '"',
     "Gleichzeichen": "=",
     "Gedankenstrich": "–",
+    "beziehungsweise": "bzw.",
 }
 def dragon_text():
     """Pass through words unchanged, but replace punctuation and other stuff that has wrongfully been written out."""
