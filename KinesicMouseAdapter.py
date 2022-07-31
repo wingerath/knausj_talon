@@ -99,9 +99,13 @@ class Actions:
             return # do nothing when there is no mapping
         actionToExecute()
 
+    def isFacialActionMode():
+        """returns whether facial actions are generally active"""
+        return False
+
     def isFacialActionModifierActive():
         """returns whether CheekPuff is among the currently active"""
-        return facialActionModifier in activeFacialActions
+        return actions.user.isFacialActionMode() or facialActionModifier in activeFacialActions
 
     def getCurrentMillis():
         """returns whether CheekPuff is among the currently active"""
