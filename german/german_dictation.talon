@@ -1,5 +1,6 @@
 language: de_DE
-not app: /Dragon for Windows/
+and not app: /Dragon for Windows/
+and not title: /LibreOffice Calc/
 -
 
 Leertaste: insert(' ')
@@ -12,6 +13,7 @@ Backslash: insert("\\")
 Apostroph: insert("'")
 Klammer: insert("(")
 Asterisk: insert("*")
+Pluszeichen: insert("+")
 at: insert("@")
 Innen: "Innen"
 
@@ -20,7 +22,15 @@ Umbruch: key("shift-enter")
 enter: key("enter")
 tab: key("tab")
 shift tab: key("tab")
-
+Punkt <phrase>:
+  insert(". ")
+  insert(user.formatted_text(user.formatted_text("{phrase}", "CAPITALIZE_FIRST_WORD"), "DRAGON_TEXT"))
+Ausrufezeichen <phrase>:
+  insert("! ")
+  insert(user.formatted_text(user.formatted_text("{phrase}", "CAPITALIZE_FIRST_WORD"), "DRAGON_TEXT"))
+Fragezeichen <phrase>:
+  insert("? ")
+  insert(user.formatted_text(user.formatted_text("{phrase}", "CAPITALIZE_FIRST_WORD"), "DRAGON_TEXT"))
 
 <phrase>: insert(user.formatted_text("{phrase}", 'DRAGON_TEXT'))
 groß <phrase>: insert(user.formatted_text(user.formatted_text("{phrase}", "CAPITALIZE_FIRST_WORD"), "DRAGON_TEXT"))
