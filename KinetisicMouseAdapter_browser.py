@@ -18,8 +18,8 @@ facialActionState = {
 @ctx.action_class("user")
 class Actions:
 
-    def isFacialActionMode():
-        return facialActionState["facialActionsOn"]
+#    def isFacialActionMode():
+#        return facialActionState["facialActionsOn"]
 
 
     def CheekPuff_on():
