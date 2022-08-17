@@ -27,5 +27,27 @@ groß <phrase>: insert(user.formatted_text(user.formatted_text("{phrase}", "CAPI
 Kleinbuchstaben <phrase>: insert(user.formatted_text(user.formatted_text("{phrase}", "LOWERCASE_FIRST_WORD"), "DRAGON_TEXT"))
 öffne Diktierfenster: key(ctrl-shift-d)
 
-(left | links): key("left")
-(right | rechts): key("right")
+go left: key("left")
+(go right | go reit): key("right")
+
+Klammer auf: "("
+Klammer zu: ")"
+
+null: "0"
+eins: "1"
+zwei: "2"
+drei: "3"
+vier: "4"
+fünf: "5"
+sechs: "6"
+sieben: "7"
+acht: "8"
+neun: "9"
+zehn: "10"
+elf: "11"
+zwölf: "12"
+zwei tausend achtzehn: "2018"
+zwei tausend neunzehn: "2019"
+zwei tausend zwanzig: "2020"
+zwei tausend einundzwanzig: "2021"
+zwei tausend zweiundzwanzig: "2022"
