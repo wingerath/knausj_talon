@@ -35,6 +35,6 @@ Schmaler machen:
 
 
 
-
+die Cyrols: "die Cyrols ([[Dadi]] / [[Stevie]] / [[Lotte]] / [[Matti]])"
 
 

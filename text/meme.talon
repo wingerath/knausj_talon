@@ -16,5 +16,5 @@ meme Thursday: "https://www.youtube.com/watch?v=kfVsfOSbJY0&t=125s"
 meme Saturday: "https://www.youtube.com/watch?v=kfVsfOSbJY0&t=142s"
 meme partying: "https://www.youtube.com/watch?v=kfVsfOSbJY0&t=62s"
 
-
+meme Friday let's go: "https://youtube.com/shorts/cjgldht4PKw"
 

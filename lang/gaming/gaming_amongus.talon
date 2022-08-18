@@ -2,8 +2,6 @@ title:/Among Us/
 mode: sleep
 -
 
-tag(): user.BatmanArkhamCity
-
 settings():
     key_hold = 16.0
     key_wait = 20.0
@@ -17,3 +15,6 @@ settings():
 (kill | quench): key("q")
 (report | phone | red): key("r")
 (move | roll ability | fine): key("f")
+
+
+parrot(pop): mouse_click(1)

@@ -22,13 +22,13 @@ Umbruch: key("shift-enter")
 enter: key("enter")
 tab: key("tab")
 shift tab: key("tab")
-Punkt <phrase>:
+Punkt [Leertaste] <phrase>:
   insert(". ")
   insert(user.formatted_text(user.formatted_text("{phrase}", "CAPITALIZE_FIRST_WORD"), "DRAGON_TEXT"))
-Ausrufezeichen <phrase>:
+Ausrufezeichen [Leertaste] <phrase>:
   insert("! ")
   insert(user.formatted_text(user.formatted_text("{phrase}", "CAPITALIZE_FIRST_WORD"), "DRAGON_TEXT"))
-Fragezeichen <phrase>:
+Fragezeichen [Leertaste] <phrase>:
   insert("? ")
   insert(user.formatted_text(user.formatted_text("{phrase}", "CAPITALIZE_FIRST_WORD"), "DRAGON_TEXT"))
 

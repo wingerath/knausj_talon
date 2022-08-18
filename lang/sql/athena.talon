@@ -107,9 +107,9 @@ date our: "date, hour"
 
 
 # noise controls
-parrot(blup):
-	key(ctrl-shift-z)
-parrot(pop):
-	key(ctrl-shift-z)
-parrot(tut):
-	key(ctrl-z)
+#parrot(blup):
+#	key(ctrl-shift-z)
+#parrot(pop):
+#	key(ctrl-shift-z)
+#parrot(tut):
+#	key(ctrl-z)

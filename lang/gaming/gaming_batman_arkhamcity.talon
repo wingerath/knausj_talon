@@ -5,24 +5,78 @@ mode: sleep
 tag(): user.BatmanArkhamCity
 
 settings():
-    key_hold = 16.0
+    key_hold = 32d.0
     key_wait = 20.0
-    speech.timeout = 0.100
+    speech.timeout = 0.150
 #    speech.engine = 'wav2letter'
 
+stun: key("q")
 
-1: key("1 1")
-2: key("2 2")
-3: key("3 3")
-4: key("4 4")
-5: key("5 5")
-6: key("6 6")
+stunner:
+  key("q")
+  sleep(500ms)
+  key("q")
+  sleep(500ms)
+  key("q")
 
 # noise controls
 #parrot(blup):
 #	key(shift)
-parrot(pop):
-	mouse_click(1)
-parrot(tut):
-	key(shift)
+#parrot(pop):
+#	mouse_click(1)
+#parrot(tut):
+#	key(shift)
+
+each: key("e")
+quench: key("q")
+red: key("r")
+trap: key("t")
+yank: key("y")
+plex: key("x")
+fine: key("f")
+odd: key("o")
+
+mick: mouse_click(2)
+
+duck: key("ctrl:down")
+run: key("space:down")
+stand:
+  key("ctrl:up")
+  key("space:up")
+
+
+one: key("1")
+two: key("2")
+three: key("3")
+(for | four): key("4")
+five: key("5")
+six: key("6")
+seven: key("7")
+eight: key("8")
+nine: key("9")
+zero: key("0")
+
+
+
+
+
+parrot(tut): mouse_click(1)
+
+parrot(pop): mouse_click(2)
+
+parrot(click): key("f")
+
+parrot(motorboat): mouse_click(1)
+parrot(motorboatrillt): mouse_click(1)
+
+parrot(ch_bach):
+	print("ch_bach")
+#	key("xxx")
+
+parrot(uboat):
+	print("uboat")
+#	key("xxx")
+
+
+p
 
