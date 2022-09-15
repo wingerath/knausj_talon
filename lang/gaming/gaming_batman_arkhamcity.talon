@@ -57,17 +57,22 @@ nine: key("9")
 zero: key("0")
 
 
+claw:
+  key("2")
+  sleep(100ms)
+  key("2")
 
 
 
-parrot(tut): mouse_click(1)
-
+parrot(trill): key("f")
+parrot(click): mouse_click(0)
 parrot(pop): mouse_click(2)
 
-parrot(click): key("f")
-
-parrot(motorboat): mouse_click(1)
-parrot(motorboatrillt): mouse_click(1)
+#parrot(trill): mouse_click(0)
+parrot(broken_saxophone):
+  key("ctrl:down")
+  sleep(100ms)
+  key("ctrl:up")
 
 parrot(ch_bach):
 	print("ch_bach")
@@ -78,5 +83,5 @@ parrot(uboat):
 #	key("xxx")
 
 
-p
+
 
