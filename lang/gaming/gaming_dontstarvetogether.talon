@@ -14,10 +14,9 @@ settings():
 # noise controls
 #parrot(blup):
 #	key(shift)
-parrot(pop):
-	mouse_click(1)
-parrot(tut):
-	key(shift)
+parrot(pop): mouse_click(0)
+#parrot(tut):
+#	key(shift)
 
 (chirp): speech.enable()
 

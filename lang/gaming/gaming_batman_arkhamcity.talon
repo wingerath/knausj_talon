@@ -5,7 +5,7 @@ mode: sleep
 tag(): user.BatmanArkhamCity
 
 settings():
-    key_hold = 32d.0
+    key_hold = 32.0
     key_wait = 20.0
     speech.timeout = 0.150
 #    speech.engine = 'wav2letter'
@@ -83,5 +83,5 @@ parrot(uboat):
 #	key("xxx")
 
 
-
+toggle mouse: user.toggle_mouse_button(0)
 
