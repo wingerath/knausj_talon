@@ -83,5 +83,7 @@ parrot(uboat):
 #	key("xxx")
 
 
-toggle mouse: user.toggle_mouse_button(0)
+toggle touch: user.toggle_mouse_button(0)
+toggle rick: user.toggle_mouse_button(1)
+toggle mike: user.toggle_mouse_button(2)
 
