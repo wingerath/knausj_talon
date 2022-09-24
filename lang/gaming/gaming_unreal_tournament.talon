@@ -1,8 +1,7 @@
-title:/Batman: Arkham City/
+title:/UnrealTournament/
 mode: sleep
 -
 
-tag(): user.BatmanArkhamCity
 tag(): user.gaming
 
 settings():
@@ -18,8 +17,8 @@ stunner:
   sleep(500ms)
   key("q")
   sleep(500ms)
-  key("q")
 
+  key("q")
 # noise controls
 #parrot(blup):
 #	key(shift)
@@ -47,7 +46,7 @@ stand:
 
 
 one: key("1")
-two: key("2")
+dddtwo: key("2")
 three: key("3")
 (for | four): key("4")
 five: key("5")
@@ -65,11 +64,10 @@ claw:
 
 
 
-parrot(trill): key("f")
+parrot(motorboat): user.hold_button("ctrl")
 parrot(click): mouse_click(0)
-parrot(pop): mouse_click(2)
-
-#parrot(trill): mouse_click(0)
+#parrot(pop): mouse_click(2)
+parrot(tut): mouse_click(2)
 parrot(broken_saxophone):
   key("ctrl:down")
   sleep(100ms)
@@ -85,6 +83,7 @@ parrot(uboat):
 
 
 toggle touch: user.toggle_mouse_button(0)
+parrot(pop): user.toggle_mouse_button(0)
 toggle rick: user.toggle_mouse_button(1)
 toggle mike: user.toggle_mouse_button(2)
 
