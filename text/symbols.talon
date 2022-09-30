@@ -28,7 +28,7 @@ empty dubstring: user.insert_between('"', '"')
 empty escaped (dubstring|dub quotes): user.insert_between('\\"', '\\"')
 empty string: user.insert_between("'", "'")
 empty escaped string: user.insert_between("\\'", "\\'")
-(inside parens | args): user.insert_between("(", ")")
+(inside parens): user.insert_between("(", ")")
 inside (squares | square brackets | list): user.insert_between("[", "]")
 inside (bracket | braces): user.insert_between("{", "}")
 inside percent: user.insert_between("%", "%")
@@ -44,7 +44,7 @@ angle that:
 (bracket | brace) that:
     text = edit.selected_text()
     user.paste("{{{text}}}")
-(parens | args) that:
+(parens) that:
     text = edit.selected_text()
     user.paste("({text})")
 percent that:

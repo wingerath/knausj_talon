@@ -12,7 +12,11 @@ ctx.matches = "tag: user.gaming"
 
 
 gaming_cronjobs = {
-    "ctrl": None
+    "ctrl": None,
+    "mouse_left": None,
+    "mouse_middle": None,
+    "mouse_right": None,
+    "alt": None
 }
 
 
@@ -47,8 +51,18 @@ class Actions:
 
     def push_button(button: str, upOrDown: str):
         """pushes the provided button"""
-        actions.key(button + ":" + upOrDown)
+        mouse_button = -1
+        if (button == "mouse_left"):
+            mouse_button = 0
+        elif (button == "mouse_middle"):
+            mouse_button = 1
+        elif (button == "mouse_right"):
+            mouse_button = 2
 
-    def isFacialActionModifierActive():
-        """returns whether CheekPuff is among the currently active"""
-        return actions.user.isFacialActionMode() or facialActionModifier in activeFacialActions
+        if (mouse_button > -1):
+            if (upOrDown == "down"):
+                actions.user.mouse_drag(mouse_button)
+            elif (upOrDown == "up"):
+                actions.user.mouse_drag_end()
+        else:
+            actions.key(button + ":" + upOrDown)

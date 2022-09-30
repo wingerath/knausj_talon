@@ -7,6 +7,9 @@ iris toggle view: key("f8")
 
 face toggle: key("alt-1")
 
+
+#discord toggle: key("ctrl-shift-m")
+
 game toggle:
   key("alt-1")
   key("f8")
