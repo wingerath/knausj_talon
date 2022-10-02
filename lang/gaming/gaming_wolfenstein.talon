@@ -2,6 +2,8 @@ title:/Wolfenstein/
 mode: sleep
 -
 
+tag(): user.gaming
+tag(): user.gaming_UnrealTournament
 
 settings():
     key_hold = 150.0

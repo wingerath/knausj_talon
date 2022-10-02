@@ -2,6 +2,9 @@ title:/Among Us/
 mode: sleep
 -
 
+tag(): user.gaming
+tag(): user.gaming_AmongUs
+
 settings():
     key_hold = 16.0
     key_wait = 20.0

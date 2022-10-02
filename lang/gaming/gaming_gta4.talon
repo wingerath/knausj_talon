@@ -3,6 +3,7 @@ mode: sleep
 -
 
 tag(): user.gaming
+tag(): user.gaming_gta4
 
 settings():
     key_hold = 32.0

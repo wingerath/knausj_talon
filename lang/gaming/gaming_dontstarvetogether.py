@@ -4,9 +4,13 @@ import re
 from talon import actions, Context, Module
 
 mod = Module()
-mod.tag("DST", desc="game: Don't Starve Together")
+mod.tag("gaming_DontStarveTogether", desc="game: Don't Starve Together")
 ctx = Context()
-ctx.matches = "tag: user.DST"
+ctx.matches = "tag: user.gaming_DontStarveTogether"
+
+
+ctx.settings["user.my_user_file_set_face_action_mode"] = "gaming_DontStarveTogether"
+
 
 @mod.action_class
 class Actions:

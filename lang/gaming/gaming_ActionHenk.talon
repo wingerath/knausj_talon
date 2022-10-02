@@ -2,6 +2,9 @@ title:/Action Henk/
 mode: sleep
 -
 
+tag(): user.gaming_ActionHenk
+tag(): user.gaming
+
 settings():
     key_hold = 32.0
     key_wait = 20.0

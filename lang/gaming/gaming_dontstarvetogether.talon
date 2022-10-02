@@ -2,7 +2,8 @@ title:/Don't Starve Together/
 mode: sleep
 -
 
-tag(): user.DST
+tag(): user.gaming
+tag(): user.gaming_DontStarveTogether
 
 settings():
     key_hold = 16.0

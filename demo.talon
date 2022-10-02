@@ -1,7 +1,7 @@
 not mode: sleep
 -
 
-tag(): user.gaming
+#tag(): user.gaming
 
 
 #parrot(broken_saxophone): user.hold_button("mouse_left")

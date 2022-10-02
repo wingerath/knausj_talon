@@ -1,12 +1,12 @@
-from talon import Module, Context, actions, ui, imgui, clip, settings
-import re
-
-from talon import actions, Context, Module
+from talon import Module, Context
 
 mod = Module()
+mod.tag("gaming_wolfenstein", desc="game: Wolfenstein")
 ctx = Context()
-ctx.matches = r"""
-mode: user.gaming_Wolfenstein
-mode: command 
-and code.language: gaming_Wolfenstein
-"""
+ctx.matches = "tag: user.gaming_wolfenstein"
+
+
+ctx.settings["user.my_user_file_set_face_action_mode"] = "gaming_wolfenstein"
+
+ctx.settings["user.my_user_file_set_eye_tracking_mode"] = "vision"
+
