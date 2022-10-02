@@ -85,3 +85,8 @@ apps.athena = """
 tag: browser
 and win.title:/Athena/
 """
+
+apps.pdf_xchange_viewer = """
+tag: browser
+and win.title:/PDF-XChange Viewer/
+"""

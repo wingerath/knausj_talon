@@ -33,9 +33,6 @@ class EditActions:
 mod.list("emoji", desc="Slack emojies")
 
 
-@mod.capture
-def emoji(m) -> str:
-    "Slack emojies"
 
 
 ctx.lists["user.emoji"] = {
@@ -48,7 +45,3 @@ ctx.lists["user.emoji"] = {
     "year boy": ":yeboi:",
 }
 
-
-@ctx.capture('emoji', rule="{user.emoji}")
-def emoji(m):
-    return m.emoji

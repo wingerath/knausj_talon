@@ -1,3 +1,3 @@
-app:PDF-XChange Viewer
+app:pdf_xchange_viewer
 -
 tag(): user.pdfreader
