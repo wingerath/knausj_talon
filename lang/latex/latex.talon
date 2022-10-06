@@ -41,6 +41,32 @@ figure:
         \\label{{fig:}}
     \\end{{figure}}""")
     key("up shift-up shift-up shift-up tab down end left")
+subfigure:
+    insert("""\\begin{{figure}}
+                   \\centering
+                   \\begin{{subfigure}}[b]{{0.3\\textwidth}}
+                       \\centering
+                       \\includegraphics[width=\\textwidth]{{graph1}}
+                       \\caption{{$y=x$}}
+                       \\label{{fig:y equals x}}
+                   \\end{{subfigure}}
+                   \\hfill
+                   \\begin{{subfigure}}[b]{{0.3\\textwidth}}
+                       \\centering
+                       \\includegraphics[width=\\textwidth]{{graph2}}
+                       \\caption{{$y=3sinx$}}
+                       \\label{{fig:three sin x}}
+                   \\end{{subfigure}}
+                   \\hfill
+                   \\begin{{subfigure}}[b]{{0.3\\textwidth}}
+                       \\centering
+                       \\includegraphics[width=\\textwidth]{{graph3}}
+                       \\caption{{$y=5/x$}}
+                       \\label{{fig:five over x}}
+                   \\end{{subfigure}}
+                      \\caption{{Three simple graphs}}
+                      \\label{{fig:three graphs}}
+              \\end{{figure}}""")
 
 # lists
 enumerate: user.list_environment("enumerate")

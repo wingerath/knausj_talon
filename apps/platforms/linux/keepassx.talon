@@ -16,7 +16,7 @@ copy user [name]: key(ctrl-b)
 copy password: key(ctrl-c)
 open (earl|url|link): key(ctrl-u)
 copy (earl|url|link): key(ctrl-alt-u)
-find: key(ctrl-f)
-find <user.text>:
+go find: key(ctrl-f)
+go find <user.text>:
     key(ctrl-f)
     insert("{text}")
