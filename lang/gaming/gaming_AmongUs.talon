@@ -1,4 +1,4 @@
-title:/Among Us/
+title:Among Us
 mode: sleep
 -
 

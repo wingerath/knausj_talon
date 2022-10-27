@@ -1,4 +1,4 @@
-not mode: sleep
+mode: sleep
 -
 
 #tag(): user.gaming

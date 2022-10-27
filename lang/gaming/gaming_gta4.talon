@@ -1,4 +1,4 @@
-title:/GTAIV/
+title:GTAIV
 mode: sleep
 -
 

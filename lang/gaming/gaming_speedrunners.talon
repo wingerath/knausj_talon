@@ -1,4 +1,4 @@
-title:/SpeedRunners/
+title:SpeedRunners
 mode: sleep
 -
 
@@ -26,7 +26,7 @@ plex: key("x")
 (space | boost): key("space")
 (trap | taunt): key("t")
 (fine | swap | weapon): key("f")
-(tab | player info): key("tab")
+#(tab | player info): key("tab")
 
 parrot(click): user.hold_button("down")
 left:
