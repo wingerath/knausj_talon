@@ -79,6 +79,13 @@ cronjobs = {
 }
 facialActionModifier = "CheekPuff"
 
+face_mode_use_modifier = mod.setting(
+    "my_user_file_set_face_mode_use_modifier",
+    type=bool,
+    default=True,
+    desc="If True, the facial action modifier needs to be used for facial action",
+)
+
 @mod.action_class
 class Actions:
 
@@ -101,7 +108,7 @@ class Actions:
 
     def isFacialActionMode():
         """returns whether facial actions are generally active"""
-        return False
+        return not face_mode_use_modifier.get()
 
     def isFacialActionModifierActive():
         """returns whether CheekPuff is among the currently active"""

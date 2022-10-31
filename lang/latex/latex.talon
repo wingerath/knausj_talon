@@ -1,6 +1,6 @@
 mode: user.latex
 mode: command
-title:/ - TeXstudio/
+title:/TeXstudio$/
 -
 active language: "LaTeX working"
 
@@ -13,10 +13,10 @@ keyword: user.simple_command("textkeyword")
 emphasized: user.simple_command("textemph")
 
 
-(cite|citation): user.simple_command("cite")
+(cite reference|citation): user.simple_command("cite")
 footnote: user.simple_command("footnote")
-H space: user.simple_command("hspace*")
-vee space: user.simple_command("vspace*")
+horizontal space: user.simple_command("hspace*")
+vertical space: user.simple_command("vspace*")
 input: user.simple_command("input")
 label: user.simple_command("label")
 (ref|reference): user.simple_command("ref")
