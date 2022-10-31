@@ -29,7 +29,7 @@ stunner:
 #	key(shift)
 
 each: key("e")
-quench: key("q")
+quick: key("q")
 red: key("r")
 trap: key("t")
 yank: key("y")

@@ -30,6 +30,8 @@ def change_facial_mode_kinesis_mouse_live(newMode: str):
         actions.key("ctrl-alt-shift-6")
     elif (newMode == "gaming_trackmania"):
         actions.key("ctrl-alt-shift-7")
+    elif (newMode == "gaming_StarWarsJediAcademy"):
+        actions.key("ctrl-alt-shift-8")
     else: # Talon
         actions.key("ctrl-alt-shift-ä")
     print("facial action mode changed to: " + newMode)

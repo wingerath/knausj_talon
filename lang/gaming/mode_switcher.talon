@@ -17,6 +17,7 @@ face mode normal: user.set_facial_mode("Talon")
 #face mode dragonball: user.set_facial_mode("gaming_dragonball")
 #face mode trackmania: user.set_facial_mode("gaming_trackmania")
 #face mode batman: user.set_facial_mode("gaming_BatmanArkhamCity")
+#face mode jedi academy: user.set_facial_mode("gaming_StarWarsJediAcademy")
 
 #discord toggle: key("ctrl-shift-m")
 

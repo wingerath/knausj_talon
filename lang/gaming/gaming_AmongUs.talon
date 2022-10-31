@@ -16,7 +16,7 @@ settings():
 (vent | vest): key("v")
 (interact | do | each): key("e")
 #parrot(pop): key("e")
-(kill | quench): key("q")
+(kill | quick): key("q")
 #parrot(tut): key("q")
 (report | phone | red): key("r")
 (move | roll ability | fine): key("f")

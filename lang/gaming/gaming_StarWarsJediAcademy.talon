@@ -1,24 +1,15 @@
-title:/Batman: Arkham City/
+title:/: Jedi Academy$/
 mode: sleep
 -
 
 tag(): user.gaming
-tag(): user.gaming_BatmanArkhamCity
+tag(): user.gaming_StarWarsJediAcademy
 
 settings():
     key_hold = 32.0
     key_wait = 20.0
     speech.timeout = 0.150
 #    speech.engine = 'wav2letter'
-
-stun: key("q")
-
-stunner:
-  key("q")
-  sleep(500ms)
-  key("q")
-  sleep(500ms)
-  key("q")
 
 # noise controls
 #parrot(blup):
@@ -58,12 +49,6 @@ nine: key("9")
 zero: key("0")
 
 
-claw:
-  key("2")
-  sleep(100ms)
-  key("2")
-
-
 
 parrot(trill): key("f")
 parrot(click): mouse_click(0)
@@ -83,8 +68,4 @@ parrot(uboat):
 	print("uboat")
 #	key("xxx")
 
-
-toggle touch: user.toggle_mouse_button(0)
-toggle rick: user.toggle_mouse_button(1)
-toggle mike: user.toggle_mouse_button(2)
 

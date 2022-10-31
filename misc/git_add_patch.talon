@@ -8,7 +8,7 @@ yank:
 near:
   key(n)
   key(enter)
-quench:
+quick:
   key(q)
   key(enter)
 drum:
