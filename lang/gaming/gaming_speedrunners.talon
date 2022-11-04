@@ -21,7 +21,7 @@ settings():
 
 zip: key("z")
 escape: key("escape")
-plex: key("x")
+pix: key("x")
 (cam | fire): key("c")
 (space | boost): key("space")
 (trap | taunt): key("t")

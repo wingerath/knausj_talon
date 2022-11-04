@@ -24,7 +24,7 @@ quick: key("q")
 red: key("r")
 trap: key("t")
 yank: key("y")
-plex: key("x")
+pix: key("x")
 fine: key("f")
 odd: key("o")
 

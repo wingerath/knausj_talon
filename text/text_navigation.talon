@@ -10,7 +10,7 @@ navigate [{user.arrow_key}] [{user.navigation_action}] [{user.navigation_target_
 #   navigate comma: moves after the next "," on the line.
 #   navigate before five: moves before the next "5" on the line.
 #   navigate left underscore: moves before the previous "_" on the line.
-#   navigate left after second plex: moves after the second-previous "x" on the line.
+#   navigate left after second pix: moves after the second-previous "x" on the line.
 #
 # Besides characters, we can find phrases or move in predetermined units:
 #

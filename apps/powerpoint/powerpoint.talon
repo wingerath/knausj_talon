@@ -1,13 +1,14 @@
-title:/ - PowerPoint/
+app:Microsoft PowerPoint
 mode: command
 -
 slide:
   key("alt-r")
   key("ä n")
-  key("down:3")
+  key("down:2")
+  key("right:5")
   key("enter")
   key("down")
-  sleep(1000ms)
+  sleep(500ms)
 
 
 move:
@@ -45,5 +46,13 @@ fix:
 clean:
   key("delete down")
   sleep(500ms)
+
+kicker:
+  user.engine_mimic("touch")
+  sleep(200ms)
+  key("delete")
+  sleep(200ms)
+  key("pagedown:2")
+  sleep(200ms)
 
 
