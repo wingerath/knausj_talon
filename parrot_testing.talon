@@ -1,4 +1,4 @@
-mode: sleep
+mode: sleep_does_not_exist
 -
 
 parrot(tut):
