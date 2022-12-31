@@ -77,12 +77,6 @@ parrot(click): key("ö")
 parrot(tut): key("ö")
 parrot(pop): mouse_click(2)
 
-#parrot(trill): mouse_click(0)
-parrot(broken_saxophone):
-  key("ctrl:down")
-  sleep(100ms)
-  key("ctrl:up")
-
 parrot(ch_bach):
 	print("ch_bach")
 #	key("xxx")
