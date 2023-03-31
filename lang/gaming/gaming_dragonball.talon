@@ -1,5 +1,4 @@
-title:/DRAGON BALL/
-mode: sleep
+app: /Divinity Original Sinxxx/
 -
 
 tag(): user.gaming

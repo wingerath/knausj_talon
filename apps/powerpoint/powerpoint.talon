@@ -4,7 +4,7 @@ mode: command
 slide:
   key("alt-r")
   key("ä n")
-  key("down:2")
+  key("down")
   key("right:5")
   key("enter")
   key("down")
@@ -52,7 +52,13 @@ kicker:
   sleep(200ms)
   key("delete")
   sleep(200ms)
-  key("pagedown:2")
+  key("pagedown")
   sleep(200ms)
+
+aline right:
+  key("alt-r")
+  key("g h r")
+  key("alt-r")
+  key("g h b")
 
 

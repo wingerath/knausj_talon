@@ -15,4 +15,3 @@ kill: key(backspace)
 (clear | löschen bitte): key(delete)
 enter: key(enter)
 
-

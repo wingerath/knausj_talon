@@ -38,17 +38,27 @@ bat:
   key("b:down")
   sleep(700ms)
   key("b:up")
+freedom:
+  key("pagedown:down")
+  sleep(700ms)
+  key("pagedown:up")
 
 # noise controls
-parrot(blup): key("f")
-parrot(pop): key("f")
+#parrot(blup): key("f")
+#parrot(pop): key("f")
 #parrot(click): mouse_click(1)
 #parrot(tut):
 #	key(shift)
 
 (escape | exit): key("escape")
 kill: key("backspace")
+enter: key("enter")
+(mike | map): key("m")
+quick: key("q")
+sit: key("i")
 pix: key("x")
+look: key("l")
+fine: key("f")
 pit: key("p")
 other window: key("alt-tab")
 
@@ -65,16 +75,16 @@ one: key("1")
 two: key("2")
 three: key("3")
 (for | four): key("4")
-five: key("5")
-six: key("6")
-seven: key("7")
-eight: key("8")
-nine: key("9")
+fiver: key("5")
+sixer: key("6")
+sevener: key("7")
+eighter: key("8")
+niner: key("9")
 zero: key("0")
 
-parrot(trill): key("f")
+#parrot(trill): key("f")
 parrot(click): key("ö")
-parrot(tut): key("ö")
+#parrot(tut): key("ö")
 parrot(pop): mouse_click(2)
 
 parrot(ch_bach):
@@ -85,6 +95,7 @@ parrot(uboat):
 	print("uboat")
 #	key("xxx")
 
+eagle: key("ß")
 
 toggle touch: user.toggle_mouse_button(0)
 toggle rick: user.toggle_mouse_button(1)

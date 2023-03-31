@@ -1,7 +1,9 @@
+language:/.*/
+-
 meme it is what it is: "https://www.youtube.com/watch?v=Vm1yHwwfAic"
 meme team data: "https://www.youtube.com/watch?v=2y4xKNt_kbM"
 meme impossible: "https://www.youtube.com/watch?v=Q9-fYdy12PY"
-meme (super boy | super Junge): "https://www.youtube.com/watch?v=IqssrGv6UNI&t=43s"
+meme (super boy | super Junge): "https://www.youtube.com/watch?v=IqssrGv6UNI&t=54s"
 
 meme (hot | heiß): "https://www.youtube.com/watch?v=ZLN7Vx2ZVHk&t=96s"
 meme (honk): "https://www.youtube.com/watch?v=2sIKYlxDxwE"
@@ -20,6 +22,38 @@ meme Friday let's go: "https://youtube.com/shorts/cjgldht4PKw"
 
 meme deadline mode: https://www.youtube.com/watch?v=SFvbXZAaHTY
 
-
-
-
+emote (smile tears | lachen Tränen): "😂"
+emote (smile sweat | lachen schwitzen): "😅"
+emote (smile smile | lachen lachen): "😄"
+emote (smile wink | lachen zwinkern): "😉"
+emote (smile rolling | lachen Rollen): "🤣"
+emote (muscle | Muskel): "💪"
+emote (shrug | Achselzucken): "🤷"
+emote (pix drum | X D): ️"😆"
+emote (sunglasses | Sonnenbrille): "😎"
+emote (shocking | Schock): "😱"
+emote (squiggly face | Wabl Gesicht): "🥴"
+emote (beers | Biere): "🍻"
+emote (egg plant | Auberginen): "🍆"
+emote (banana | Banane): "🍌"
+emote (sick | übel): "🤢"
+emote (weary | müde): "😩"
+emote (idea | Idee): "💡"
+emote (birthday cake | Geburtstagstorte): "🎂"
+emote (kiss | Küsschen): "😘"
+emote (heart face | Herz Gesicht): "🥰"
+emote (heart eyes | Herz Augen): "😍"
+emote (index finger | Zeigefinger): "☝"
+emote (beer | wir): ️"🍺"
+emote (pizza): "🍕"
+emote (heart with arrow | Herz mit Pfeil): "💘"
+emote (head explodes | Kopf explodiert): "🤯"
+emote (beard | Bart): "🥸"
+emote (queen | Königin): "👸"
+emote (king | König): "🤴"
+emote (crown | Krone): "👑"
+emote (Hammer): "🔨"
+emote (Party): "🥳"
+emote (Cocktail): "🍹"
+emote (party horn | Party Tröte): "🎉"
+emote (wine | Wein): "🍷"

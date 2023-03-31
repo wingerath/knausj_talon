@@ -14,6 +14,7 @@ Apostroph: insert("'")
 Klammer: insert("(")
 Asterisk: insert("*")
 Pluszeichen: insert("+")
+Eurosymbol: insert("€")
 at: insert("@")
 Innen: "Innen"
 
