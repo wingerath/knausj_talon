@@ -55,10 +55,45 @@ kicker:
   key("pagedown")
   sleep(200ms)
 
-aline right:
-  key("alt-r")
-  key("g h r")
-  key("alt-r")
-  key("g h b")
+animate:
+  key("alt-v")
+  key("n")
+  key("down")
+  key("right")
+  key("enter")
 
+align left:
+  key("alt-r")
+  key("g")
+  key("h")
+  key("l")
 
+align right:
+  key("alt-r")
+  key("g")
+  key("h")
+  key("r")
+
+align top:
+  key("alt-r")
+  key("g")
+  key("h")
+  key("b")
+
+align bottom:
+  key("alt-r")
+  key("g")
+  key("h")
+  key("n")
+
+align center:
+  key("alt-r")
+  key("g")
+  key("h")
+  key("i")
+
+align middle:
+  key("alt-r")
+  key("g")
+  key("h")
+  key("k")

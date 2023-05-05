@@ -20,4 +20,9 @@ class Actions:
 #            actions.speech.disable()
 #            actions.user.sound_disable()
 
+    def CheekPuff_on():
+        """reacts to the TongueOut facial action commencing"""
+        if (actions.user.isFacialActionModifierActive()):
+            actions.user.engine_mimic("mute huddle")
+
 
