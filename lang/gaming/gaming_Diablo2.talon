@@ -24,6 +24,7 @@ sit: key(s)
 
 town: key(f8)
 scroll: key(f7)
+shield: key(f5)
 
 one: key(1)
 two: key(2)
