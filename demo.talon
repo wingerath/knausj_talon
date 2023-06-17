@@ -7,7 +7,7 @@ mode: sleep
   key(ctrl-a)
   key(alt-r)
   key(s c)
-  "Calibri"
+  "Arial"
   key(enter)
   key("pagedown")
   sleep(200ms)

@@ -1,8 +1,8 @@
-title:Diablo II: Resurrected
+title:Diablo IV
 mode: sleep
 -
 tag(): user.gaming
-tag(): user.gaming_Diablo2
+tag(): user.gaming_Diablo4
 
 settings():
     key_hold = 16.0
