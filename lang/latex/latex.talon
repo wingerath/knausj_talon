@@ -12,6 +12,8 @@ compile: key("ctrl-t")
 keyword: user.simple_command("textkeyword")
 emphasized: user.simple_command("textemph")
 
+translation: insert('\\gerEn{{}}{{}}')
+language switch: insert('\\ifthenelse{{\\isGer}}{{\n\n}}{{\n\n}}')
 
 (cite reference|citation): user.simple_command("cite")
 footnote: user.simple_command("footnote")

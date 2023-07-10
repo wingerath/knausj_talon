@@ -3,14 +3,17 @@ mode: sleep
 
 #font:
   user.engine_mimic("touch")
-  sleep(200ms)
+  sleep(500ms)
   key(ctrl-a)
+  sleep(500ms)
   key(alt-r)
   key(s c)
+  sleep(500ms)
   "Arial"
   key(enter)
+  sleep(500ms)
   key("pagedown")
-  sleep(200ms)
+  sleep(500ms)
 
 gamepad(left_xy:repeat):
     x = x * 20
