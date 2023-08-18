@@ -1,7 +1,35 @@
 from talon import Module, actions, app, speech_system, Context
-from playsound import playsound
+import sounddevice as sd
+import soundfile as sf
+import threading
+import queue
 
 mod = Module()
+
+class SoundPlayer:
+    def __init__(self):
+        self.queue = queue.Queue()
+        self.thread = threading.Thread(target=self._play_sound_thread)
+        self.thread.start()
+
+    def _play_sound_thread(self):
+        while True:
+            filename = self.queue.get()
+            if filename == 'exit':
+                break
+            data, samplerate = sf.read(filename, dtype='float32')
+            sd.play(data, samplerate)
+            sd.wait()
+
+    def play(self, filename):
+        self.queue.put(filename)
+
+    def stop(self):
+        self.queue.put('exit')
+        self.thread.join()
+
+player = SoundPlayer()
+
 
 modes = {
     "admin": "enable extra administration commands terminal (docker, etc)",
@@ -38,9 +66,9 @@ class Actions:
     def playSound(file: str):
         """plays a sound to indicate wake up"""
         try:
-            playsound(file, block = False)
+            player.play(file)
         except:
-            playsound('user/talon_sounds/1778__junggle__ambient-buttons/29150__junggle__btn340.wav', block = False)
+            player.play('user/talon_sounds/1778__junggle__ambient-buttons/29150__junggle__btn340.wav')
 
     def sound_enable():
         """audio signal for enabling speech"""

@@ -20,7 +20,10 @@ meme partying: "https://www.youtube.com/watch?v=kfVsfOSbJY0&t=62s"
 
 meme Friday let's go: "https://youtube.com/shorts/cjgldht4PKw"
 
-meme deadline mode: https://www.youtube.com/watch?v=SFvbXZAaHTY
+meme deadline mode: "https://www.youtube.com/watch?v=SFvbXZAaHTY"
+
+meme guy staring: "https://www.youtube.com/watch?v=52XqcGgjP_4"
+meme never give up: "https://www.youtube.com/watch?v=tYzMYcUty6s"
 
 emote (smile tears | lachen Tränen): "😂"
 emote (smile sweat | lachen schwitzen): "😅"

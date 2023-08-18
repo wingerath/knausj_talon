@@ -5,8 +5,8 @@ tag(): user.gaming
 tag(): user.gaming_Diablo2
 
 settings():
-    key_hold = 16.0
-    key_wait = 20.0
+    key_hold = 32.0
+    key_wait = 32.0
     speech.timeout = 0.100
 
 
@@ -31,6 +31,16 @@ two: key(2)
 three: key(3)
 four: key(4)
 
+(call to arms | buffer):
+  key(w)
+  sleep(500ms)
+  key(f1)
+  sleep(800ms)
+  key(f2)
+  sleep(800ms)
+  key(w)
+  sleep(800ms)
+  key(f5)
 
 parrot(pop): mouse_click(0)
 
