@@ -1,7 +1,7 @@
 from talon import Module, Context
 
 mod = Module()
-mod.tag("gaming_ps1", desc="game: Red Dead Redemption 2")
+mod.tag("gaming_ps1", desc="game: Playstation")
 ctx = Context()
 ctx.matches = "tag: user.gaming_ps1"
 

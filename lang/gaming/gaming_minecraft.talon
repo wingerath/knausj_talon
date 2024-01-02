@@ -1,4 +1,4 @@
-title:/Minecraft 1|Minecraft\*/
+title:/^Roguelike Adventures and Dungeons 2 \| Minecraft/
 mode: sleep
 -
 
@@ -36,3 +36,9 @@ attack:
 menu: key(escape)
 inventory: key(i)
 ^item <number>$: key("{number}")
+
+
+drag:
+	user.mouse_drag(0)
+end drag | drag end:
+    user.mouse_drag_end()

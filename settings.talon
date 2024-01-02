@@ -51,7 +51,7 @@ settings():
     # user.context_sensitive_dictation = 1
 
     #
-    speech.timeout = 0.300
+    speech.timeout = 0.500
   	imgui.dark_mode = 1
     # just record speech all the time and may be sent the data to aegis at some point
     speech.record_all = 1

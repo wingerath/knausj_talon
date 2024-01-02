@@ -1,6 +1,10 @@
 mode: sleep
 -
 
+
+mouse movement test: user.mouse_move(50, -50)
+
+
 #font:
   user.engine_mimic("touch")
   sleep(500ms)
