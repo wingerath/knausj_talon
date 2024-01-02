@@ -13,10 +13,10 @@ class Actions:
     def TongueOut_on():
         """reacts to the TongueOut facial action commencing"""
         if (actions.user.isFacialActionModifierActive()):
-#            actions.speech.set_microphone("System Default")
-#            actions.speech.set_microphone("Analogue 1 + 2 (Focusrite Usb Audio)")
-#            actions.speech.set_microphone("Krisp Microphone (Krisp Audio)")
-            actions.speech.set_microphone("VoiceMeeter Output (VB-Audio VoiceMeeter VAIO)")
+#            actions.sound.set_microphone("System Default")
+            actions.sound.set_microphone("Analogue 1 + 2 (Focusrite Usb Audio)")
+#            actions.sound.set_microphone("Krisp Microphone (Krisp Audio)")
+#            actions.sound.set_microphone("VoiceMeeter Output (VB-Audio VoiceMeeter VAIO)")
             actions.user.engine_mimic("chirp")
 #            actions.user.microphone_select(2)
 #            actions.speech.enable()

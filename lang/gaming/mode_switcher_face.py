@@ -26,7 +26,7 @@ def change_facial_mode_kinesis_mouse_live(newMode: str):
         actions.key("ctrl-alt-shift-4")
     elif (newMode == "gaming_wolfenstein"):
         actions.key("ctrl-alt-shift-5")
-    elif (newMode == "gaming_destiny"):
+    elif (newMode == "gaming_minecraft"):
         actions.key("ctrl-alt-shift-6")
     elif (newMode == "gaming_Diablo2"):
         actions.key("ctrl-alt-shift-7")
