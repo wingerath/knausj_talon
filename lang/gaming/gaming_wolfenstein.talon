@@ -1,4 +1,4 @@
-title:/Wolf/
+app: WolfNewOrder
 mode: sleep
 -
 
