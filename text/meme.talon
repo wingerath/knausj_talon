@@ -15,6 +15,7 @@ meme (long | long man): "https://www.youtube.com/watch?v=6-1Ue0FFrHY&amp;t=13s"
 meme (alarm | alert): "https://www.youtube.com/watch?v=tc-pRTk2r7k"
 meme (latest shit): "Denn ganz ehrlich, wo ist hier, wo ist der latest shit, ne? Wo ist das denn, wo passiert das denn? Wo ist der Merger, wo ist hier Fashion, wo ist Musik, wo ist Architektur? Ich seh so'n paar Prints, 'n paar Poster, aber das isses doch nicht. Bauhaus, was soll das denn? Die werden jetzt 100 Jahre alt nächstes Jahr. Kann ich doch mich – Ich kann mich doch daran nicht mehr erlabern, das muss doch weitergehen. Wo sind die Magazine, wo ist die Inspiration, wo ist Augumented Reality, wo ist das alles, wo sind die Oculus Rift-Brillen? Das ist alles so in der Komfortzone."
 meme machine learning: "https://youtu.be/YnL9vAFphmE?t=146"
+meme (theorie von ja oder nein | ja oder nein | theory of yes or no | yes or no): "https://www.youtube.com/watch?v=FsNo5aMcOfU"
 
 meme Friday: "https://www.youtube.com/watch?v=kfVsfOSbJY0&t=98s"
 meme Friday alternative: "https://www.youtube.com/watch?v=kfVsfOSbJY0&t=128s"

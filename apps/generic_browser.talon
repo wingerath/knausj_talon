@@ -78,4 +78,4 @@ click: key(f)
 (click new | new tab): key(shift-f)
 
 
-parrot(tut): key("pagedown")
+#parrot(tut): key("pagedown")

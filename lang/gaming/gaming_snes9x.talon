@@ -21,5 +21,8 @@ settings():
 #parrot(broken_saxophone): key(x)
 #	key(shift)
 
-
+^load state <number>$:
+  key("alt-f")
+  key("l")
+  key("{number}")
 

@@ -9,6 +9,8 @@ settings():
     key_hold = 150.0
     key_wait = 20.0
 
+<user.ordinals>: core.repeat_command(ordinals-1)
+
 Sprint slide:s
     key("b:down")
     sleep(100ms)
@@ -36,14 +38,17 @@ pix | dual wield | double: key("x")
 golf | grenade: key("g")
 mike | map: key("m")
 june | journal: key("j")
-red | reload: key("b")
+red | reload: key("r")
 odd | throw | knife: key("o")
+n | next | next weapon: key("n")
 
+parrot(pop): key("ß")
+parrot(tut): key("ß")
 aim | target on:
    user.push_button("ö", "up")
    user.hold_button("ö", 12000, false)
 target off: user.push_button("ö", "up")
-"<number>": key("{number}")
+"item <number>": key("{number}")
 enter: key("enter")
 escape: key("escape")
 

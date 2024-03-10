@@ -21,3 +21,4 @@ class Actions:
 #            actions.user.microphone_select(2)
 #            actions.speech.enable()
 #            actions.user.sound_enable()
+            actions.user.toggle_mute()

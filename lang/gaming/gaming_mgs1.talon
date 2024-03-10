@@ -1,4 +1,4 @@
-title:/FPS/
+title:/Parsec/
 mode: sleep
 -
 

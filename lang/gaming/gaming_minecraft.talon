@@ -34,6 +34,8 @@ attack:
 #active language: "gaming (Don't Starve Together)"
 
 menu: key(escape)
+booker: key(c)
+speller: key(v)
 inventory: key(i)
 ^item <number>$: key("{number}")
 
