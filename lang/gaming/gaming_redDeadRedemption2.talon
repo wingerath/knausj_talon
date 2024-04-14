@@ -22,7 +22,7 @@ enter: user.hold_button("enter", 100, true)
 map: user.hold_button("m", 100, true)
 sit: user.hold_button("i", 200, true)
 bat: user.hold_button("b", 200, true)
-fine: user.hold_button("f", 200, true)
+fine: user.hold_button("f", 100, true)
 quick: user.hold_button("q", 200, true)
 vest: user.hold_button("v", 200, true)
 target: user.hold_button("ö", 1000, false)
@@ -41,7 +41,7 @@ harp: user.hold_button("h", 100, true)
 
 # noise controls
 #parrot(blup): key("f")
-#parrot(pop): key("f")
+parrot(pop): key("f")
 #parrot(click): mouse_click(1)
 #parrot(tut):
 #parrot(trill): key("f")

@@ -22,7 +22,7 @@ def change_facial_mode_kinesis_mouse_live(newMode: str):
         actions.key("ctrl-alt-shift-2")
     elif (newMode == "gaming_UnrealTournament"):
         actions.key("ctrl-alt-shift-3")
-    elif (newMode == "gaming_gta4"):
+    elif (newMode == "gaming_secretsOfGrindea"):
         actions.key("ctrl-alt-shift-4")
     elif (newMode == "gaming_wolfenstein"):
         actions.key("ctrl-alt-shift-5")

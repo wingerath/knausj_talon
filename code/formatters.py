@@ -93,6 +93,7 @@ dictSpace = {
     "Gedankenstrich": "–",
     "beziehungsweise": "bzw.",
     "gegebenenfalls": "ggf.",
+    "Pipe": "|",
 }
 def dragon_text():
     """Pass through words unchanged, but replace punctuation and other stuff that has wrongfully been written out."""

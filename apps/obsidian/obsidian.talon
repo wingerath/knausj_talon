@@ -33,8 +33,10 @@ Schmaler machen:
   key("left:2")
   insert("|200")
 
+umbenennen:
+  key("left:2")
+  insert("|")
 
 
-die Cyrols: "die Cyrols ([[Dadi]] / [[Stevie]] / [[Lotte]] / [[Matti]])"
 
 

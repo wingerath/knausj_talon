@@ -11,4 +11,6 @@ ctx = Context()
 class Actions:
     def toggle_mute():
         """A simple test action"""
-        actions.key("ctrl-shift-space")
+        actions.key("ctrl:down shift:down space:down")
+        actions.sleep("500ms")
+        actions.key("ctrl:up shift:up space:up")
