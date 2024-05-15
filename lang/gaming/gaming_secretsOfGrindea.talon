@@ -16,7 +16,8 @@ settings():
 #parrot(blup):
 #	key(shift)
 #parrot(pop): mouse_click(0)
-#parrot(tut): key(tab)
+parrot(tut): user.hold_button("2", 500, true)
+parrot(pop): user.hold_button("4", 500, true)
 #	key(shift)
 
 (chirp): speech.enable()

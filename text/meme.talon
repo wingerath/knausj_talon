@@ -68,3 +68,9 @@ emote (wine | Wein): "🍷"
 emote (Regenbogen | rainbow): "🌈"
 emote (Dino): "🦖"
 emote (Weihnachtsbaum | Christbaum | Christmas tree): "🎄"
+
+
+
+
+
+meeting link call Wolle: "https://uol.de/call-wolle"

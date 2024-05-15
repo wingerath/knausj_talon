@@ -15,7 +15,7 @@ settings():
 
 ^chirp german$:
     user.engine_mimic("chirp")
-    sleep(.5)
+#    sleep(.05)
     user.engine_mimic("german")
 
 
