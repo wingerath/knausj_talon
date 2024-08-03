@@ -34,7 +34,7 @@ def change_facial_mode_kinesis_mouse_live(newMode: str):
         actions.key("ctrl-alt-shift-o")
     elif (newMode == "gaming_redDeadRedemption2"):
         actions.key("ctrl-alt-shift-9")
-    elif (newMode == "gaming_ark"):
+    elif (newMode == "gaming_sheepy"):
         actions.key("ctrl-alt-shift-l")
     elif (newMode == "gaming_ps1"):
         actions.key("ctrl-alt-shift-k")

@@ -29,6 +29,7 @@ meme deadline mode: "https://www.youtube.com/watch?v=SFvbXZAaHTY"
 
 meme guy staring: "https://www.youtube.com/watch?v=52XqcGgjP_4"
 meme never give up: "https://www.youtube.com/watch?v=tYzMYcUty6s"
+meme (oh god oh man | oh man or god): "https://youtu.be/Y9KyBdPeKHg?t=25"
 
 emote (smile tears | lachen Tränen): "😂"
 emote (smile sweat | lachen schwitzen): "😅"
