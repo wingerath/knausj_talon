@@ -13,6 +13,9 @@ settings():
     speech.enable()
     user.sound_enable()
 
+^snore$:
+    user.sound_already_disabled()
+
 ^chirp german$:
     user.engine_mimic("chirp")
 #    sleep(.05)

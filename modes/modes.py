@@ -78,6 +78,10 @@ class Actions:
         """audio signal for disabling speech"""
         actions.user.playSound('user/talon_sounds/1778__junggle__ambient-buttons/29035__junggle__btn225.wav')
 
+    def sound_already_disabled():
+        """audio signal for disabling speech"""
+        actions.user.playSound('user/talon_sounds/1778__junggle__ambient-buttons/29180__junggle__btn370.wav')
+
     def enable_withSound():
         """ensables the speech engine with a sound"""
         actions.speech.enable()
