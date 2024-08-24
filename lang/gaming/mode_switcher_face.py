@@ -36,7 +36,7 @@ def change_facial_mode_kinesis_mouse_live(newMode: str):
         actions.key("ctrl-alt-shift-9")
     elif (newMode == "gaming_sheepy"):
         actions.key("ctrl-alt-shift-l")
-    elif (newMode == "gaming_ps1"):
+    elif (newMode == "gaming_mgs5"):
         actions.key("ctrl-alt-shift-k")
     else: # Talon
         actions.key("ctrl-alt-shift-ä")
