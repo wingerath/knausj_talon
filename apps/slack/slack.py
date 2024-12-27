@@ -28,3 +28,20 @@ class EditActions:
     def line_insert_down():
         actions.edit.line_end()
         actions.key("shift-enter")
+
+
+mod.list("emoji", desc="Slack emojies")
+
+
+
+
+ctx.lists["user.emoji"] = {
+    "muscle": ":muscle:",
+    "scream": ":scream:",
+    "smile tears": ":joy:",
+    "smile": ":smile:",
+    "smile sweat": ":sweat_smile:",
+    "thumbs up": ":thumbsup:",
+    "year boy": ":yeboi:",
+}
+

@@ -1,0 +1,61 @@
+at sign: "@"
+(question | question mark): "?"
+(downscore | underscore): "_"
+double dash: "--"
+(left | open) brace: "{"
+(right | close) brace: "}"
+(left | open) paren: "("
+(right | close) paren: ")"
+(left | open) square: "["
+(right | close) square: "]"
+triple quote: "'''"
+(triple grave | triple back tick | gravy):
+    insert("```")
+(dot dot | dotdot): ".."
+ellipses: "..."
+(comma | spam): ","
+(spamma): ", "
+plus: "+"
+derivation arrow: " --> "
+short arrow: "->"
+long arrow: "-->"
+thin arrow: "->"
+(dub | fat) arrow: "=>"
+new line: "\\n"
+carriage return: "\\r"
+line feed: "\\r\\n"
+empty dubstring: user.insert_between('"', '"')
+empty escaped (dubstring|dub quotes): user.insert_between('\\"', '\\"')
+empty string: user.insert_between("'", "'")
+empty escaped string: user.insert_between("\\'", "\\'")
+(inside parens): user.insert_between("(", ")")
+inside (squares | square brackets | list): user.insert_between("[", "]")
+inside (bracket | braces): user.insert_between("{", "}")
+inside percent: user.insert_between("%", "%")
+inside (quotes | string): user.insert_between("'", "'")
+inside (double quotes | dubquotes): user.insert_between('"', '"')
+inside (graves | back ticks): user.insert_between("`", "`")
+angle that:
+    text = edit.selected_text()
+    user.paste("<{text}>")
+(square | square bracket) that:
+    text = edit.selected_text()
+    user.paste("[{text}]")
+(bracket | brace) that:
+    text = edit.selected_text()
+    user.paste("{{{text}}}")
+(parens) that:
+    text = edit.selected_text()
+    user.paste("({text})")
+percent that:
+    text = edit.selected_text()
+    user.paste("%{text}%")
+quote that:
+    text = edit.selected_text()
+    user.paste("'{text}'")
+(double quote | dubquote) that:
+    text = edit.selected_text()
+    user.paste('"{text}"')
+(grave | back tick) that:
+    text = edit.selected_text()
+    user.paste('`{text}`')

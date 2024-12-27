@@ -3,8 +3,11 @@ os: windows
 os: linux
 -
 
+clear: delete
+dash: minus
 end: end
 home: home
+kill: backspace
 minus: minus
 enter: enter
 page down: pagedown

@@ -1,11 +1,244 @@
 list: user.vocabulary
 -
-N map: nmap
-under documented: under-documented
-nmap
+dot: .
+seven zip: 7zip
+above described: above-described
 admin
+app
+apps
+ASAP
+asset
+assets
+asset source
+Athena
+authors
+Axiforma
+AWS
+beckend: backend
+backend as a service: Backend-as-a-Service
+bachelors thesis: "bachelor's thesis"
+bandwidth
+Bailis
+Peter Bailis
+buck end: Baqend
+Beaconnect
+bib tax: BibTeX
+boolean
+bot
+bot detection
+bots
+but
+BTW
+cash: cache
+cache sketch
+CDN
+CD ends: CDNs
+client
+clients
 Cisco
 Citrix
-VPN
+CockroachDB
+contentful
+couch DB: CouchDB
+CPU
+CPUs
+crucks: CrUX
+customer-facing
+customer facing: customer-facing
+customer dash facing: customer-facing
+dashboard
+dashboarding
+dashboards
+data
+data base: database
+data bases: databases
+DB
+Decathlon
+DecathlonNL
+desktop
+DDL
+DML
+dee max co: Dmexco
 DNS
+duckduckgo
+Dynamic Fetcher
+EDBT
+elastic search: ElasticSearch
+EMR
+ETL
+EG: e.g.
+Fastly
+Firebase
+Flink
+Flink Forward
+florida: Florida
+Frankfurt
+Gessert
+Felix Gessert
+GPU
+GPUs
+Gradle
+Hadoop
+hash
+hashes
+hash set
+hash sets
+header
+headers
+horizontally
+HTML
+eye E: i.e.
+ICDE
+eye Dee: ID
+eye dees: IDs
+I triple E: IEEE
+int
+in telly jay: IntelliJ
+in valley dee bee: InvaliDB
+in valid be: InvaliDB
+eye pee: IP
+eye pees: IPs
+Jonny Ketchup
+jonny at catch up boys dot de: jonny@ketchup-boys.de
+jason: JSON
+kady a: KDA
+Kda: KDA
+Kibana
+KinesicMouse
+Kinesis
+Kotlin
+kay SQL db: ksqlDB
+Lias
+login
+logins
+map reduce: MapReduce
+masters thesis: "master's thesis"
+Metal Gear Solid
+millisecond
+milliseconds
 Minecraft
+Mirko
+MongoDB
+multi tenancy: multi-tenancy
+multi tenant1: multi-tenant
+Netflix
+Nextcloud
+ninja
+Ninja Warrior
+Norbert
+nosql: NoSQL
+no sequel: NoSQL
+notepad plus plus: Notepad++
+an vidia: Nvidia
+Nvidia Broadcast
+oh al tee pee: OLTP
+open VPN: OpenVPN
+Orestes
+parrot
+pars: parse
+parsed
+parses
+parsing
+password
+passwords
+P H D: PhD
+PI
+PIs
+Point of Presence
+Points of Presence
+pull based: pull-based
+push based: push-based
+quota
+real time: real-time
+response
+response cause
+response source
+Ritter
+rum: RUM
+S three: S3
+SageMaker
+schema
+session
+sessions
+shard
+sharded
+sharding
+shards
+sigmod: SIGMOD
+Sisu
+Skype
+Slack
+source code
+speed kid: Speed Kit
+SQL
+Startup Platform
+Steven Skiena
+Skiena
+Stonebraker
+storage tier
+storage tiering
+storage tiers
+Strato
+Supabase
+Superset
+tack camp: Techcamp
+Threema
+Thunderbird
+tier
+tiering
+tiers
+timer
+timers
+timestamp
+timestamps
+time to first byte
+top level: top-level
+under documented: under-documented
+you are Al: URL
+you are Als: URLs
+USA
+VLDB
+Windows
+Windows ten: Windows 10
+wolfram: Wolfram
+volle: Wolle
+volleh: Wolle
+vingerat: Wingerath
+EDBT two thousand twenty: EDBT 2020
+EDBT two thousand twenty one: EDBT 2021
+VCL
+VeraCrypt
+Vimium
+VLDB two thousand twenty: VLDB 2020
+VLDB two thousand twenty one: VLDB 2021
+VPN
+what's app: WhatsApp
+WireGuard
+Wolfram at Wingerath dot org: wolfram@wingerath.org
+number two thousand twenty: 2020
+number two thousand twenty one: 2021
+number zero: 0
+number one: 1
+number two: 2
+number word three: 3
+number four: 4
+number five: 5
+number six: 6
+number seven: 7
+number eight: 8
+number nine: 9
+number ten: 10
+number eleven: 11
+number twelve: 12
+number thirteen: 13
+number fourteen: 14
+number fifteen: 15
+number sixteen: 16
+number seventeen: 17
+number eighteen: 18
+number nineteen: 19
+number twenty: 20
+number twenty one: 21
+number twenty two: 22
+number twenty three: 23
+number twenty four: 24
