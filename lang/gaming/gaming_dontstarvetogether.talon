@@ -34,3 +34,4 @@ attack:
 #active language: "gaming (Don't Starve Together)"
 
 
+number <number>: "{number}"

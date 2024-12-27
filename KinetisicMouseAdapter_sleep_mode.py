@@ -14,7 +14,8 @@ class Actions:
         """reacts to the TongueOut facial action commencing"""
         if (actions.user.isFacialActionModifierActive()):
 #            actions.sound.set_microphone("System Default")
-            actions.sound.set_microphone("Analogue 1 + 2 (Focusrite Usb Audio)")
+            actions.sound.set_microphone("Analogue 1 + 2 (3- Focusrite USB Audio)")
+#            actions.sound.set_microphone("Analogue 1 + 2 (Focusrite Usb Audio)")
 #            actions.sound.set_microphone("Krisp Microphone (Krisp Audio)")
 #            actions.sound.set_microphone("VoiceMeeter Output (VB-Audio VoiceMeeter VAIO)")
             actions.user.engine_mimic("chirp")

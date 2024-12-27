@@ -40,3 +40,12 @@ umbenennen:
 
 
 
+Referenzen einfügen:
+  key("alt-e")
+  insert("List Last Contacts Template")
+  key("enter")
+
+Refresh:
+  key("pagedown:30")
+  key("pageup:30")
+
