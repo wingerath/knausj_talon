@@ -51,21 +51,6 @@ mode: sleep
 
 mouse movement test: user.mouse_move(50, -50)
 
-
-#font:
-  user.engine_mimic("touch")
-  sleep(500ms)
-  key(ctrl-a)
-  sleep(500ms)
-  key(alt-r)
-  key(s c)
-  sleep(500ms)
-  "Arial"
-  key(enter)
-  sleep(500ms)
-  key("pagedown")
-  sleep(500ms)
-
 gamepad(left_xy:repeat):
     x = x * 20
     y = y * -60

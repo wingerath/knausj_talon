@@ -16,8 +16,7 @@ tag(): user.gaming_mgs55
 parrot(blup): user.hold_button("x", 100, true)
 parrot(pop): user.hold_button("x", 100, true)
 parrot(click): user.hold_button("x", 100, true)
-parrot(trill): user.hold_button("x", 100, true)
-parrot(click): user.hold_button("x", 100, true)
+nparrot(click): user.hold_button("x", 100, true)
 parrot(tut): user.hold_button("x", 100, true)
 
 ########################

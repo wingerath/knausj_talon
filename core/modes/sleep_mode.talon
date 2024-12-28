@@ -30,7 +30,24 @@ settings():
 # means that these won't recognize. The (+) handles this case, so if you say
 # <pause> "talon wake talon wake" <pause>, it'll still work.
 
-^(welcome back)+$:
-    user.mouse_wake()
-    user.history_enable()
-    user.talon_mode()
+#this exists solely to prevent talon from walking up super easily in sleep mode at the moment with wav2letter
+<phrase>: skip()
+
+^(chirp)+$:
+    speech.enable()
+    user.sound_enable()
+
+^snore [<phrase>]$:
+    user.sound_already_disabled()
+
+^chirp german [<phrase>]$:
+    speech_system.engine_mimic("chirp")
+    speech_system.engine_mimic("german")
+    speech_system.engine_mimic("{phrase}")
+
+
+^microphone off$:
+    user.microphone_select_none()
+    speech.enable()
+    user.sound_disable()
+

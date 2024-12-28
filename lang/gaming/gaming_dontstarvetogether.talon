@@ -19,8 +19,6 @@ parrot(pop): mouse_click(0)
 #parrot(tut):
 #	key(shift)
 
-(chirp): speech.enable()
-
 abort: user.abort_action()
 
 pick up:
@@ -34,4 +32,4 @@ attack:
 #active language: "gaming (Don't Starve Together)"
 
 
-number <number>: "{number}"
+(number | numb | item) <number>: "{number}"

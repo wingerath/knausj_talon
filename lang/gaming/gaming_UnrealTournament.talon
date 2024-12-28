@@ -46,16 +46,7 @@ stand:
   key("space:up")
 
 
-one: key("1")
-dddtwo: key("2")
-three: key("3")
-(for | four): key("4")
-five: key("5")
-six: key("6")
-seven: key("7")
-eight: key("8")
-nine: key("9")
-zero: key("0")
+^<number>$: key("{number}")
 
 
 claw:
@@ -65,7 +56,7 @@ claw:
 
 
 
-parrot(motorboat): user.hold_button("ctrl")
+#parrot(motorboat): user.hold_button("ctrl")
 parrot(click): mouse_click(0)
 #parrot(pop): mouse_click(2)
 parrot(tut): mouse_click(2)

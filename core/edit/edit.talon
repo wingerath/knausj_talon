@@ -25,11 +25,11 @@ go line start | head: edit.line_start()
 go line end | tail: edit.line_end()
 
 go way left:
-    edit.line_start()
-    edit.line_start()
-go way right: edit.line_end()
-go way up: edit.file_start()
-go way down: edit.file_end()
+    key("home")
+    key("home")
+go way right | go end: key("end")
+go way up: key("ctrl-home")
+go way down: key("ctrl-end")
 
 go top: edit.file_start()
 go bottom: edit.file_end()
@@ -72,7 +72,7 @@ clear word right:
     edit.delete()
 
 # Copy
-copy that: edit.copy()
+copy that: key("ctrl-c")
 copy word left: user.copy_word_left()
 copy word right: user.copy_word_right()
 
@@ -91,7 +91,7 @@ copy word right: user.copy_word_right()
 #     edit.copy()
 
 # Cut
-cut that: edit.cut()
+cut that: key("ctrl-x")
 cut word left: user.cut_word_left()
 cut word right: user.cut_word_right()
 
@@ -110,7 +110,7 @@ cut word right: user.cut_word_right()
 #     edit.cut()
 
 # Paste
-(pace | paste) that: edit.paste()
+(pace | paste) that: key("ctrl-v")
 (pace | paste) enter:
     edit.paste()
     key(enter)
@@ -132,11 +132,27 @@ padding: user.insert_between(" ", " ")
     insert(" ")
 
 # Undo/redo
-undo that: edit.undo()
-redo that: edit.redo()
+undo that: key("ctrl-z")
+redo that: key("ctrl-y")
 
 # Save
-file save: edit.save()
+file save | safe that: edit.save()
 file save all: edit.save_all()
 
 [go] line mid: user.line_middle()
+
+
+go before: key("ctrl-left")
+go after: key("ctrl-right")
+
+mark {user.arrow_key}: key("shift-{user.arrow_key}")
+mark before: key("ctrl-shift-left")
+mark after: key("ctrl-shift-right")
+mark way {user.arrow_key}:
+    key("shift:down")
+    mimic("go way {user.arrow_key}")
+    key("shift:up")
+
+
+
+

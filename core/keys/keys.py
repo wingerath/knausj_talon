@@ -148,12 +148,14 @@ symbol_key_words = {
     "apostrophe": "'",
     "L square": "[",
     "left square": "[",
+    "open square": "[",
     "brack": "[",
     "bracket": "[",
     "left bracket": "[",
     "square": "[",
     "R square": "]",
     "right square": "]",
+    "clothes square": "]",
     "r brack": "]",
     "r bracket": "]",
     "right bracket": "]",
@@ -192,8 +194,16 @@ symbol_key_words = {
     "pipe": "|",
     "dub quote": '"',
     "double quote": '"',
+
+    "german air": "ä",
+    "german odd": "ö",
+    "german urge": "ü",
+    "german sun": "ß",
+#    "asterisk": "*",
+
     # Currencies
     "dollar": "$",
+    "euro": "€",
     "pound": "£",
 }
 

@@ -218,6 +218,56 @@ def de_camel(text: str) -> str:
     )
 
 
+dictNoSpace = {
+    "Komma": ",",
+    "Ausrufezeichen": "!",
+    "Fragezeichen": "?",
+    "Semikolon": ";",
+    "Doppelpunkt": ":",
+    "Punkt": ".",
+}
+dictSpace = {
+    "Und-Zeichen": "&",
+    "Prozentzeichen": "%",
+    "Dollarzeichen": "$",
+    "Gänsefüßchen": '"',
+    "Gleichzeichen": "=",
+    "Gedankenstrich": "–",
+    "beziehungsweise": "bzw.",
+    "gegebenenfalls": "ggf.",
+    "Pipe": "|",
+}
+
+
+def format_dragon_text(text: str) -> str:
+    """
+    Formats the input text by replacing punctuation and other elements based on given dictionaries.
+
+    Parameters:
+        text (str): The input text to format.
+        dict_no_space (dict): A dictionary for words that should not have spaces.
+        dict_space (dict): A dictionary for words that should have spaces.
+
+    Returns:
+        str: The formatted text with replacements applied.
+    """
+    words = text.split()
+    formatted_words = []
+
+    for i, word in enumerate(words):
+        # Check if the word exists in dictNoSpace or dictSpace and apply replacement
+        if word in dictNoSpace:
+            replacement = dictNoSpace[word]
+        else:
+            # Add a space before the word unless it's the first word
+            replacement = ("" if i == 0 else " ") + dictSpace.get(word, word)
+
+        formatted_words.append(replacement)
+
+    # Combine all formatted words into a single string
+    return ''.join(formatted_words)
+
+
 formatter_list = [
     CustomFormatter("NOOP", lambda text: text),
     CustomFormatter("TRAILING_SPACE", lambda text: f"{text} "),
@@ -227,10 +277,12 @@ formatter_list = [
     CustomFormatter("ALL_CAPS", lambda text: text.upper()),
     CustomFormatter("ALL_LOWERCASE", lambda text: text.lower()),
     CustomFormatter("COMMA_SEPARATED", lambda text: re.sub(r"\s+", ", ", text)),
+    CustomFormatter("DRAGON_TEXT", lambda text: format_dragon_text(text)),
     CustomFormatter("REMOVE_FORMATTING", remove_code_formatting),
     TitleFormatter("CAPITALIZE_ALL_WORDS"),
     # The sentence formatter being called `CAPITALIZE_FIRST_WORD` is a bit of a misnomer, but kept for backward compatibility.
     SentenceFormatter("CAPITALIZE_FIRST_WORD"),
+    CustomFormatter("LOWERCASE_FIRST_WORD", lambda text: text[:1].lower() + text[1:] if text else text),
     # This is the formatter that actually just capitalizes the first word
     CapitalizeFormatter("CAPITALIZE"),
     CodeFormatter("NO_SPACES", "", lower, lower),

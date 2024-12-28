@@ -19,7 +19,7 @@ class Actions:
         if (actions.user.isFacialActionModifierActive()):
             actions.user.mouse_scroll_up()
             cron.cancel(cronjobs["mouse_scroll"])
-            cronjobs["mouse_scroll"] = cron.interval("80ms", lambda: actions.user.mouse_scroll_up())
+            cronjobs["mouse_scroll"] = cron.interval("50ms", lambda: actions.user.mouse_scroll_up())
     def BrowsUp_off():
         """reacts to the given facial action stopping"""
         cron.cancel(cronjobs["mouse_scroll"])
@@ -29,7 +29,7 @@ class Actions:
         if (actions.user.isFacialActionModifierActive()):
             actions.user.mouse_scroll_down()
             cron.cancel(cronjobs["mouse_scroll"])
-            cronjobs["mouse_scroll"] = cron.interval("80ms", lambda: actions.user.mouse_scroll_down())
+            cronjobs["mouse_scroll"] = cron.interval("50ms", lambda: actions.user.mouse_scroll_down())
     def NoseSneer_off():
         """reacts to the NoseSneer facial action stopping"""
         cron.cancel(cronjobs["mouse_scroll"])

@@ -3,24 +3,22 @@ language: de_DE
 
 ^(englisch)$:
     key("ctrl-shift-alt-+")
-	  mode.disable("user.german")
-  	mode.disable("user.german_conformer")
+    user.disable_german()
     user.sound_enable()
 
 ^(snore)$:
     key("ctrl-shift-alt-+")
-	  mode.disable("user.german")
+    user.disable_german()
     speech.disable()
     user.sound_disable()
 
 ^(microphone off | Microphone auf)$:
-    user.engine_mimic("Mikrofon ausschalten")
-	  mode.disable("user.german")
-  	mode.disable("user.german_conformer")
+    user.disable_german()
     user.microphone_select_none()
+    user.engine_mimic("Mikrofon ausschalten")
     user.sound_disable()
 
-talon sleep | snore | go to sleep: skip()
+^(german | Chairman)$: skip()
 
 
 Umbruch: key("shift-enter")

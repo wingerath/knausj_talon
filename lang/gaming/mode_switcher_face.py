@@ -49,7 +49,8 @@ def toggle_face_mode_kinesis_mouse_live():
 
 def face_action_mode_handler(*args):
     """Sets the current facial action mode to the one specified in the settings"""
-    change_facial_mode_kinesis_mouse_live(str(face_action_mode.get()))
+    newMode = settings.get("user.my_user_file_set_face_action_mode")
+    change_facial_mode_kinesis_mouse_live(newMode)
 
 @mod.action_class
 class Actions:

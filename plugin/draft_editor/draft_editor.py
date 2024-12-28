@@ -38,8 +38,12 @@ mod.setting(
 
 
 def get_editor_names():
-    names_csv = settings.get("user.draft_editor")
-    return names_csv.split(", ") if names_csv else default_names
+    try:
+        names_csv = settings.get("user.draft_editor")
+        return [name.strip() for name in names_csv.split(",")]
+    except KeyError as e:
+        print(f"Error: Missing setting {e}")
+    return default_names
 
 
 def handle_app_running(_app):

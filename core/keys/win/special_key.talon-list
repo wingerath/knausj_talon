@@ -4,6 +4,7 @@ os: linux
 -
 
 clear: delete
+delete that: delete
 dash: minus
 end: end
 home: home

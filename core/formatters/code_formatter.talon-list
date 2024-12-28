@@ -1,7 +1,9 @@
 list: user.code_formatter
 -
 all cap: ALL_CAPS
+uppercase: ALL_CAPS
 all down: ALL_LOWERCASE
+lowercase: ALL_LOWERCASE
 camel: PRIVATE_CAMEL_CASE
 dotted: DOT_SEPARATED
 dub string: DOUBLE_QUOTED_STRING

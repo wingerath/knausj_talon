@@ -93,6 +93,9 @@ settings():
     # Time in seconds to wait for the clipboard to change when trying to get selected text
     # user.selected_text_timeout = 0.25
 
+
+    user.draft_editor = "Visual Studio Code,Code,VSCodium,Codium,code-oss"
+
 # Uncomment to enable the curse yes/curse no commands (show/hide mouse cursor).
 # See issue #688 for more detail: https://github.com/talonhub/community/issues/688
 # tag(): user.mouse_cursor_commands_enable

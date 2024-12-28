@@ -11,7 +11,7 @@ settings():
 
 <user.ordinals>: core.repeat_command(ordinals-1)
 
-Sprint slide:s
+Sprint slide:
     key("b:down")
     sleep(100ms)
     key("ctrl:down")

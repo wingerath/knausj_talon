@@ -41,7 +41,7 @@ harp: user.hold_button("h", 100, true)
 
 # noise controls
 #parrot(blup): key("f")
-parrot(pop): key("f")
+#parrot(pop): key("f")
 #parrot(click): mouse_click(1)
 #parrot(tut):
 #parrot(trill): key("f")
