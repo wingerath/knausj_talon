@@ -1,4 +1,4 @@
-mouse control mouse: tracking.control_toggle()
+mouse control: tracking.control_toggle()
 mouse control off: user.mouse_sleep()
 mouse zoom: tracking.control_zoom_toggle()
 mouse camera overlay: tracking.control_debug_toggle()

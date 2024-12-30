@@ -34,7 +34,7 @@ Fragezeichen [Leertaste] <phrase>:
 <phrase>: insert(user.formatted_text("{phrase}", 'DRAGON_TEXT'))
 
 groß <phrase>: insert(user.formatted_text(user.formatted_text("{phrase}", "CAPITALIZE_FIRST_WORD"), "DRAGON_TEXT"))
-klein <phrase>: insert(user.formatted_text(user.formatted_text("{phrase}", "LOWERCASE_FIRST_WORD"), "DRAGON_TEXT"))
+(klein | Kleinbuchstaben) <phrase>: insert(user.formatted_text(user.formatted_text("{phrase}", "LOWERCASE_FIRST_WORD"), "DRAGON_TEXT"))
 öffne Diktierfenster: key(ctrl-shift-d)
 
 go left: key("left")

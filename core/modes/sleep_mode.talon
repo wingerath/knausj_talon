@@ -37,6 +37,10 @@ settings():
     speech.enable()
     user.sound_enable()
 
+^chirp now [<phrase>]$:
+    mimic("chirp")
+    mimic("{phrase}")
+
 ^snore [<phrase>]$:
     user.sound_already_disabled()
 
