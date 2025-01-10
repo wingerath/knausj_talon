@@ -1,6 +1,7 @@
 mode: user.latex
 mode: command
 title:/TeXstudio$/
+language:/.*/
 -
 active language: "LaTeX working"
 

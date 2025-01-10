@@ -4,10 +4,12 @@ and not title: /LibreOffice Calc/
 -
 Leertaste: insert(' ')
 Gänsefüßchen: insert('"')
+Gänsefuß unten: insert('„')
+Gänsefuß oben: insert('“')
 Bindestrich: insert('-')
 Unterstrich: insert('_')
 Raute: insert('#')
-Schrägstrich: insert("")
+Schrägstrich: insert("/")
 Backslash: insert("\\")
 Apostroph: insert("'")
 Klammer: insert("(")

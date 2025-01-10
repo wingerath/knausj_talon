@@ -1,4 +1,5 @@
 app: obsidian
+language:/.*/
 -
 tag(): user.tabs
 
