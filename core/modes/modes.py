@@ -1,6 +1,6 @@
 from talon import Context, Module, actions, app, speech_system, cron
-import sounddevice as sd
-import soundfile as sf
+import subprocess
+import os
 import threading
 import queue
 
@@ -36,11 +36,29 @@ class SoundPlayer:
             if filename == "exit":
                 self.stop()
                 return
-            data, samplerate = sf.read(filename, dtype="float32")
-            sd.play(data, samplerate)
-            sd.wait()
+
+            # Build the relative path to FFplay
+            user_dir = os.path.expandvars(r"%AppData%")
+            # Build the relative path to FFplay
+            ffplay_path = os.path.join(user_dir, "talon", "ffplay.exe")
+
+            # Suppress the command-line window on Windows
+            startupinfo = subprocess.STARTUPINFO()
+            startupinfo.dwFlags |= subprocess.STARTF_USESHOWWINDOW
+
+            # Run FFplay to play the sound
+            subprocess.run(
+                [ffplay_path, "-nodisp", "-autoexit", filename],
+                stdout=subprocess.DEVNULL,
+                stderr=subprocess.DEVNULL,
+                startupinfo=startupinfo
+            )
         except queue.Empty:
             pass  # No sounds to play, continue polling
+        except Exception as e:
+            print(f"Error playing sound: {e}")
+
+
 
     def play(self, filename):
         """Add a sound file to the queue and start the cron job if not running."""
