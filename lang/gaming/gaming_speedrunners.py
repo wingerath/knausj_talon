@@ -18,8 +18,8 @@ ctx.settings["user.my_user_file_set_face_mode_use_modifier"] = False
 class Actions:
     def MouthRight_on():
         """reacts to the MouthRight facial action commencing"""
-        actions.key("left:up")
-        actions.key("right:down")
+#        actions.key("left:up")
+#        actions.key("right:down")
 
     def MouthRight_off():
         """reacts to the MouthRight facial action stopping"""
